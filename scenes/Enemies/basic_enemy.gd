@@ -60,6 +60,7 @@ func _on_follow_state_physics_processing(delta: float) -> void:
 	if direction.length() > 0.01:
 		var target_rotation: float  = atan2(direction.x, direction.z)
 		#this is broken, don't know why
+		var target_rotation = atan2(direction.x, direction.z)
 		rotation.y = lerp_angle(rotation.y, target_rotation, 5.0 * delta)
 		
 		
