@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dqnr7chy8y8c4"]
+
+[ext_resource type="PackedScene" uid="uid://dhqnqufol48if" path="res://assets/buildings/Models/GLB format/wall-window-wide-square-detailed.glb" id="1_oilxl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_au06l"]
+size = Vector3(0.19916992, 2.4, 4)
+
+[node name="WallWindowWideSquare" type="StaticBody3D" unique_id=691518006]
+
+[node name="wall-window-wide-square-detailed2" parent="." unique_id=840031515 instance=ExtResource("1_oilxl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1445832794]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00014647096, 1.2, 0)
+shape = SubResource("BoxShape3D_au06l")

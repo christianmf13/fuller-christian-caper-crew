@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://8qhu0ujwfdtk"]
+
+[ext_resource type="PackedScene" uid="uid://cm6xt4c27i23x" path="res://assets/buildings/Models/GLB format/wall-doorway-square.glb" id="1_llexn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ecjkf"]
+size = Vector3(0.2, 2.4, 0.55029297)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lanay"]
+size = Vector3(0.2, 2.4, 0.5498047)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vbsbf"]
+size = Vector3(0.2, 0.3, 1)
+
+[node name="WallDoorwaySquare" type="StaticBody3D" unique_id=1520622156]
+
+[node name="wall-doorway-square2" parent="." unique_id=415936025 instance=ExtResource("1_llexn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1210014840]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 1.2, 0.72422504)
+shape = SubResource("BoxShape3D_ecjkf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2103957897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 1.2, -0.72509766)
+shape = SubResource("BoxShape3D_lanay")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1063206012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9802322e-08, 2.25, 0)
+shape = SubResource("BoxShape3D_vbsbf")

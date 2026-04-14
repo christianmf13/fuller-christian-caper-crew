@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cr5aqefrvw7uu"]
+
+[ext_resource type="PackedScene" uid="uid://o4f4yly4iykk" path="res://assets/buildings/Models/GLB format/roof-flat-corner.glb" id="1_7uvwo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dwtr4"]
+size = Vector3(1.5, 0.1, 1.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mhb26"]
+size = Vector3(0.2, 0.15126953, 1.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cpvmg"]
+size = Vector3(0.5, 0.4, 1.8000001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c68is"]
+size = Vector3(1.7, 0.15101318, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_of8xs"]
+size = Vector3(2.2, 0.4, 0.5)
+
+[node name="RoofCorner" type="StaticBody3D" unique_id=1779318508]
+
+[node name="roof-flat-corner2" parent="." unique_id=413076879 instance=ExtResource("1_7uvwo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1703114437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25, 0.050000012, -0.25)
+shape = SubResource("BoxShape3D_dwtr4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1752502290]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.075463876, -0.25)
+shape = SubResource("BoxShape3D_mhb26")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=471214602]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.95000005, 0.20000002, -0.099999964)
+shape = SubResource("BoxShape3D_cpvmg")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=34688601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14999998, 0.075506605, 0.6)
+shape = SubResource("BoxShape3D_c68is")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." unique_id=1663107599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.100000024, 0.20000002, 0.95000005)
+shape = SubResource("BoxShape3D_of8xs")
