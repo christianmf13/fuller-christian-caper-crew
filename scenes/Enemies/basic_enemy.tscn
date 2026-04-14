@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="4_j4l5y"]
 [ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="5_5dvhc"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_56aao"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_p1k8i"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u3mp1"]
 
@@ -19,7 +19,7 @@ script = ExtResource("1_kqsun")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1294155852]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_56aao")
+mesh = SubResource("CapsuleMesh_p1k8i")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1195473395]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
