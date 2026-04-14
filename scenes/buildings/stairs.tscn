@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cxfc1da6wbj0p"]
+
+[ext_resource type="PackedScene" uid="uid://daexih44eqndf" path="res://assets/buildings/Models/GLB format/stairs-closed.glb" id="1_fi2hj"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a8lnq"]
+points = PackedVector3Array(-0.65, 3.609557e-16, -1.9001566, -0.65, 0.29977486, -2, 0.65, 3.609557e-16, -1.9001566, -0.65, 3.609557e-16, 2, 0.65, 0.29977486, -2, -0.65, 0.39986297, -2, 0.65, 3.609557e-16, 2, -0.65, 2.5, 2, 0.65, 0.39986297, -2, -0.65, 0.69988257, -1.5003915, 0.65, 2.5, 2, -0.65, 2.5, 1.4996085, 0.65, 0.69988257, -1.5003915, 0.65, 2.5, 1.4996085)
+
+[node name="Stairs" type="StaticBody3D" unique_id=498153641]
+
+[node name="stairs-closed2" parent="." unique_id=149675081 instance=ExtResource("1_fi2hj")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1406516412]
+shape = SubResource("ConvexPolygonShape3D_a8lnq")
