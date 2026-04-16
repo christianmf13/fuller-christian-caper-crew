@@ -16,6 +16,9 @@
 [ext_resource type="PackedScene" uid="uid://cxfc1da6wbj0p" path="res://scenes/buildings/stairs.tscn" id="14_0tv6x"]
 [ext_resource type="PackedScene" uid="uid://dehw6bfjaua3i" path="res://scenes/roads/parking_lot_edge.tscn" id="14_cr2eh"]
 [ext_resource type="PackedScene" uid="uid://bkkxe5qlkdi0o" path="res://scenes/roads/parking_lot_center.tscn" id="15_cy6r3"]
+[ext_resource type="PackedScene" uid="uid://c8wt3cdpptcou" path="res://scenes/buildings/wall_corner_diagonal.tscn" id="15_d46x6"]
+[ext_resource type="PackedScene" uid="uid://dq3ti7i76506m" path="res://scenes/buildings/door_vault.tscn" id="16_n3syt"]
+[ext_resource type="PackedScene" uid="uid://duilnvhf04y55" path="res://scenes/buildings/big_doorway.tscn" id="17_wqkcq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nr3cb"]
 sky_top_color = Color(0.091274254, 0.08989797, 0.11097167, 1)
@@ -3663,10 +3666,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7, -0.1, 31.399998)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7, -0.1, 31.399998)
 
 [node name="Wall158" parent="SetDressingBuilding" unique_id=507615178 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -2.492512, 17.449923)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -2.492512, 17.449923)
 
 [node name="Wall159" parent="SetDressingBuilding" unique_id=154982146 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -2.492512, 19.449923)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -2.492512, 19.449923)
 
 [node name="Wall160" parent="SetDressingBuilding" unique_id=1542127295 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -2.492512, 21.449923)
@@ -3687,25 +3690,25 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.5
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -2.492512, 31.449923)
 
 [node name="Wall166" parent="SetDressingBuilding" unique_id=625076109 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -2.492512, 13.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -2.492512, 13.449921)
 
 [node name="Wall167" parent="SetDressingBuilding" unique_id=737941376 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -2.492512, 15.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -2.492512, 15.449921)
 
 [node name="Wall168" parent="SetDressingBuilding" unique_id=789839896 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -2.492512, 9.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -2.492512, 9.449921)
 
 [node name="Wall169" parent="SetDressingBuilding" unique_id=2059152248 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -2.492512, 11.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -2.492512, 11.449921)
 
 [node name="Wall170" parent="SetDressingBuilding" unique_id=180308136 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -2.492512, 7.4499207)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -2.492512, 7.449921)
 
 [node name="Wall171" parent="SetDressingBuilding" unique_id=772795702 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -4.592512, 17.449923)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -4.592512, 17.449923)
 
 [node name="Wall172" parent="SetDressingBuilding" unique_id=1014649352 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -4.592512, 19.449923)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -4.592512, 19.449923)
 
 [node name="Wall173" parent="SetDressingBuilding" unique_id=1585429151 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -4.592512, 21.449923)
@@ -3726,28 +3729,28 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.5
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.542141, -4.592512, 31.449923)
 
 [node name="Wall179" parent="SetDressingBuilding" unique_id=1925172612 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -4.592512, 13.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -4.592512, 13.449921)
 
 [node name="Wall180" parent="SetDressingBuilding" unique_id=2058201915 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -4.592512, 15.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -4.592512, 15.449921)
 
 [node name="Wall181" parent="SetDressingBuilding" unique_id=1353076964 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -4.592512, 9.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -4.592512, 9.449921)
 
 [node name="Wall182" parent="SetDressingBuilding" unique_id=1152014857 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -4.592512, 11.449921)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -4.592512, 11.449921)
 
 [node name="Wall183" parent="SetDressingBuilding" unique_id=500921203 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -9.54214, -4.592512, 7.4499207)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421397, -4.592512, 7.449921)
 
 [node name="Wall184" parent="SetDressingBuilding" unique_id=176994950 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -2.492512, 17.449924)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.057859, -2.492512, 17.449924)
 
 [node name="Wall185" parent="SetDressingBuilding" unique_id=436034496 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -2.492512, 19.449924)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.057859, -2.492512, 19.449924)
 
 [node name="Wall186" parent="SetDressingBuilding" unique_id=2104065162 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -2.492512, 21.449924)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.057859, -2.492512, 21.449924)
 
 [node name="Wall187" parent="SetDressingBuilding" unique_id=323166715 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -2.492512, 23.449924)
@@ -3765,28 +3768,28 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.7
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -2.492512, 31.449924)
 
 [node name="Wall192" parent="SetDressingBuilding" unique_id=1525399408 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -2.492512, 13.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -2.492512, 13.4499235)
 
 [node name="Wall193" parent="SetDressingBuilding" unique_id=2103744136 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -2.492512, 15.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -2.492512, 15.4499235)
 
 [node name="Wall194" parent="SetDressingBuilding" unique_id=1932008882 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -2.492512, 9.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -2.492512, 9.4499235)
 
 [node name="Wall195" parent="SetDressingBuilding" unique_id=150384831 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -2.492512, 11.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -2.492512, 11.4499235)
 
 [node name="Wall196" parent="SetDressingBuilding" unique_id=1649998676 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -2.492512, 7.4499226)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -2.492512, 7.449922)
 
 [node name="Wall197" parent="SetDressingBuilding" unique_id=183604659 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -4.592512, 17.449924)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.057859, -4.592512, 17.449924)
 
 [node name="Wall198" parent="SetDressingBuilding" unique_id=1575849515 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -4.592512, 19.449924)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.057859, -4.592512, 19.449924)
 
 [node name="Wall199" parent="SetDressingBuilding" unique_id=1655869250 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -4.592512, 21.449924)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.057859, -4.592512, 21.449924)
 
 [node name="Wall200" parent="SetDressingBuilding" unique_id=1566720761 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -4.592512, 23.449924)
@@ -3804,28 +3807,28 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.7
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.757859, -4.592512, 31.449924)
 
 [node name="Wall205" parent="SetDressingBuilding" unique_id=2104264936 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -4.592512, 13.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -4.592512, 13.4499235)
 
 [node name="Wall206" parent="SetDressingBuilding" unique_id=862416342 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -4.592512, 15.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -4.592512, 15.4499235)
 
 [node name="Wall207" parent="SetDressingBuilding" unique_id=994981724 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -4.592512, 9.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -4.592512, 9.4499235)
 
 [node name="Wall208" parent="SetDressingBuilding" unique_id=803610372 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -4.592512, 11.4499235)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -4.592512, 11.4499235)
 
 [node name="Wall209" parent="SetDressingBuilding" unique_id=263887398 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.75786, -4.592512, 7.4499226)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.05786, -4.592512, 7.449922)
 
 [node name="Wall210" parent="SetDressingBuilding" unique_id=842186596 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.25786, -2.492512, 4.4998612)
 
 [node name="WallCorner13" parent="SetDressingBuilding" unique_id=797585168 instance=ExtResource("11_0tv6x")]
-transform = Transform3D(-2.1855695e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855695e-07, 12.800002, -2.5, 5.4489965)
+transform = Transform3D(-2.1855695e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855695e-07, 7.100002, -2.5, 5.448998)
 
 [node name="WallCorner14" parent="SetDressingBuilding" unique_id=1313797454 instance=ExtResource("11_0tv6x")]
-transform = Transform3D(-2.1855695e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855695e-07, 12.800002, -4.6000004, 5.4489965)
+transform = Transform3D(-2.1855695e-07, 0, 1, 0, 1, 0, -1, 0, -2.1855695e-07, 7.100002, -4.6000004, 5.448998)
 
 [node name="Wall211" parent="SetDressingBuilding" unique_id=31359105 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.25786, -4.592512, 4.4998612)
@@ -3885,10 +3888,10 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.7
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.74214, -4.592512, 4.4998612)
 
 [node name="WallCorner15" parent="SetDressingBuilding" unique_id=1786429523 instance=ExtResource("11_0tv6x")]
-transform = Transform3D(-1, 0, -2.6226834e-07, 0, 1, 0, 2.6226834e-07, 0, -1, -8.599996, -2.5, 5.449004)
+transform = Transform3D(-1, 0, -2.6226834e-07, 0, 1, 0, 2.6226834e-07, 0, -1, -3.8999953, -2.5, 5.449003)
 
 [node name="WallCorner16" parent="SetDressingBuilding" unique_id=1340809046 instance=ExtResource("11_0tv6x")]
-transform = Transform3D(-1, 0, -2.6226834e-07, 0, 1, 0, 2.6226834e-07, 0, -1, -8.599996, -4.6000004, 5.449004)
+transform = Transform3D(-1, 0, -2.6226834e-07, 0, 1, 0, 2.6226834e-07, 0, -1, -3.8999953, -4.6000004, 5.449003)
 
 [node name="Stairs" parent="SetDressingBuilding" unique_id=498153641 instance=ExtResource("14_0tv6x")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2.3189545, -2.586779, 31.381525)
@@ -3960,7 +3963,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.34
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3470964, -4.5998497, 31.384697)
 
 [node name="WallDoorwaySquare2" parent="SetDressingBuilding" unique_id=381434590 instance=ExtResource("8_2ucnx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4054546, 0, 31.394997)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.354706, 0, 31.394997)
 
 [node name="Wall246" parent="SetDressingBuilding" unique_id=393642864 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, -0.072944425, -2.49985, 32.09779)
@@ -3990,7 +3993,7 @@ transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 5.
 transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 7.9270554, -2.49985, 32.09779)
 
 [node name="Wall255" parent="SetDressingBuilding" unique_id=767727000 instance=ExtResource("5_1b6n0")]
-transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 7.9270554, -4.59985, 32.09779)
+transform = Transform3D(-3.2584137e-07, 0, -2, 0, 2, 0, 2, 0, -3.2584137e-07, 4.7270565, -4.8363266, 23.51842)
 
 [node name="Wall256" parent="SetDressingBuilding" unique_id=830720163 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 9.927055, -2.49985, 32.09779)
@@ -4579,6 +4582,105 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6999998, -4.5712724, 7.9999
 
 [node name="Floor614" parent="SetDressingBuilding" unique_id=180743895 instance=ExtResource("13_2ucnx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7, -4.5712724, 7.999998)
+
+[node name="Wall272" parent="SetDressingBuilding" unique_id=991923674 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.2991493, -2.3841858e-07, 24.55009)
+
+[node name="Wall273" parent="SetDressingBuilding" unique_id=2054459975 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.2991493, -2.3841858e-07, 24.55009)
+
+[node name="Wall274" parent="SetDressingBuilding" unique_id=171834562 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.07340604, -2.3841858e-07, 24.55009)
+
+[node name="Wall275" parent="SetDressingBuilding" unique_id=927106966 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.2991493, 2.3999999, 24.55009)
+
+[node name="Wall276" parent="SetDressingBuilding" unique_id=1818790044 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.2991493, 2.3999999, 24.55009)
+
+[node name="Wall277" parent="SetDressingBuilding" unique_id=1158208581 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.07340604, 2.3999999, 24.55009)
+
+[node name="Wall278" parent="SetDressingBuilding" unique_id=53959870 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 0, 25.494501)
+
+[node name="Wall279" parent="SetDressingBuilding" unique_id=1062935381 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 0, 27.449926)
+
+[node name="Wall280" parent="SetDressingBuilding" unique_id=942810614 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 0, 29.449924)
+
+[node name="Wall281" parent="SetDressingBuilding" unique_id=261484934 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 2.4, 25.494501)
+
+[node name="Wall282" parent="SetDressingBuilding" unique_id=1924247070 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 2.4, 27.449926)
+
+[node name="Wall283" parent="SetDressingBuilding" unique_id=957929906 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 2.4, 29.449924)
+
+[node name="Wall284" parent="SetDressingBuilding" unique_id=184999252 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.3578596, 2.4, 31.349924)
+
+[node name="Wall285" parent="SetDressingBuilding" unique_id=44100003 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.97819656, 0, 29.449923)
+
+[node name="Wall286" parent="SetDressingBuilding" unique_id=960235908 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.9781964, 0, 27.449923)
+
+[node name="Wall287" parent="SetDressingBuilding" unique_id=90223112 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.9781962, 0, 25.549923)
+
+[node name="Wall288" parent="SetDressingBuilding" unique_id=1432456730 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.97819674, 0, 31.349922)
+
+[node name="Wall289" parent="SetDressingBuilding" unique_id=1992000782 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.97819656, 2.4, 29.449923)
+
+[node name="Wall290" parent="SetDressingBuilding" unique_id=394514471 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.9781964, 2.4, 27.449923)
+
+[node name="Wall291" parent="SetDressingBuilding" unique_id=2142058711 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.9781962, 2.4, 25.549923)
+
+[node name="Wall292" parent="SetDressingBuilding" unique_id=534000029 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.97819674, 2.4, 31.349922)
+
+[node name="WallCornerDiagonal" parent="SetDressingBuilding" unique_id=1871815121 instance=ExtResource("15_d46x6")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9235815, -4.5, 23.386948)
+
+[node name="WallCornerDiagonal2" parent="SetDressingBuilding" unique_id=1074793984 instance=ExtResource("15_d46x6")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.9235815, -2.5, 23.386948)
+
+[node name="WallCornerDiagonal3" parent="SetDressingBuilding" unique_id=8372381 instance=ExtResource("15_d46x6")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -3.9235818, -2.5, 21.486948)
+
+[node name="WallCornerDiagonal4" parent="SetDressingBuilding" unique_id=804981257 instance=ExtResource("15_d46x6")]
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, -3.9235818, -4.5, 21.486948)
+
+[node name="WallCornerDiagonal5" parent="SetDressingBuilding" unique_id=2001187056 instance=ExtResource("15_d46x6")]
+transform = Transform3D(-0.99999994, 0, 0, 0, 1, 0, 0, 0, -0.99999994, 5.3008127, -4.5, 23.386948)
+
+[node name="WallCornerDiagonal6" parent="SetDressingBuilding" unique_id=308828399 instance=ExtResource("15_d46x6")]
+transform = Transform3D(-0.99999994, 0, 0, 0, 1, 0, 0, 0, -0.99999994, 5.3008127, -2.5, 23.386948)
+
+[node name="WallCornerDiagonal7" parent="SetDressingBuilding" unique_id=386315846 instance=ExtResource("15_d46x6")]
+transform = Transform3D(0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, 0.99999994, 7.100812, -2.5, 21.486948)
+
+[node name="WallCornerDiagonal8" parent="SetDressingBuilding" unique_id=401513619 instance=ExtResource("15_d46x6")]
+transform = Transform3D(0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, 0.99999994, 7.100812, -4.5, 21.486948)
+
+[node name="Wall293" parent="SetDressingBuilding" unique_id=1705690629 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -2.492512, 19.849922)
+
+[node name="Wall294" parent="SetDressingBuilding" unique_id=628804261 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -4.592512, 19.849922)
+
+[node name="DoorVault" parent="SetDressingBuilding" unique_id=815113990 instance=ExtResource("16_n3syt")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 0.09940541, -4.840557, 23.436407)
+
+[node name="BigDoorway" parent="SetDressingBuilding" unique_id=988979449 instance=ExtResource("17_wqkcq")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1, -4.864499, 23.5)
 
 [node name="SetDressingOutside" type="Node" parent="." unique_id=727757946 groups=["geometry"]]
 
