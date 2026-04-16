@@ -5103,6 +5103,30 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.8
 [node name="Wall448" parent="SetDressingBuilding" unique_id=2060683960 instance=ExtResource("5_1b6n0")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 16.80555, 2.4, -7.100512)
 
+[node name="Wall253" parent="SetDressingBuilding" unique_id=1275718054 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.4921412, 0, 18.195189)
+
+[node name="Wall449" parent="SetDressingBuilding" unique_id=2102876093 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4.4921412, 0, 18.195189)
+
+[node name="Wall450" parent="SetDressingBuilding" unique_id=1491896135 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4.4921412, 2.4, 18.195189)
+
+[node name="Wall451" parent="SetDressingBuilding" unique_id=531318524 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.4921412, 2.4, 18.195189)
+
+[node name="Wall452" parent="SetDressingBuilding" unique_id=579586151 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.7921412, 0, 18.195189)
+
+[node name="Wall453" parent="SetDressingBuilding" unique_id=808572252 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.79214114, 0, 18.195189)
+
+[node name="Wall454" parent="SetDressingBuilding" unique_id=855586562 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.79214114, 2.4, 18.195189)
+
+[node name="Wall455" parent="SetDressingBuilding" unique_id=1880819588 instance=ExtResource("5_1b6n0")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2.7921412, 2.4, 18.195189)
+
 [node name="SetDressingOutside" type="Node" parent="." unique_id=727757946 groups=["geometry"]]
 
 [node name="ParkingLotEdge" parent="SetDressingOutside" unique_id=950771006 instance=ExtResource("14_cr2eh")]
