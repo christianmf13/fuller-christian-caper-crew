@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dgmkjdego8006"]
+
+[ext_resource type="PackedScene" uid="uid://c8m45mmoy41ia" path="res://assets/buildings/Models/GLB format/door-rotate-square-a.glb" id="1_hxe6u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2pdx1"]
+size = Vector3(0.15406494, 2.1000001, 0.90000004)
+
+[node name="Door1" type="StaticBody3D" unique_id=1747216830]
+
+[node name="door-rotate-square-a2" parent="." unique_id=188279678 instance=ExtResource("1_hxe6u")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2091791489]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0012146235, 1.05, 0.44999996)
+shape = SubResource("BoxShape3D_2pdx1")

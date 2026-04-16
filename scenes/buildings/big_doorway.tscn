@@ -10,5 +10,6 @@ data = PackedVector3Array(0.049999997, 1.8605, -0.5081, 0.049999997, 1.9475, -0.
 [node name="wall-doorway-round2" parent="." unique_id=1408558118 instance=ExtResource("1_getis")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall-doorway-round2" unique_id=1775769294]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1775769294]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_2v8lm")
