@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://dgmkjdego8006" path="res://scenes/buildings/door_1.tscn" id="18_n3syt"]
 [ext_resource type="PackedScene" uid="uid://crwjsw6basf55" path="res://scenes/buildings/door_2.tscn" id="19_jg26c"]
 [ext_resource type="PackedScene" uid="uid://bga6hf7f2blgc" path="res://scenes/buildings/door_2_small.tscn" id="20_353n8"]
+[ext_resource type="PackedScene" uid="uid://u0qlxxvv338i" path="res://scenes/Furniture/desk.tscn" id="23_353n8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nr3cb"]
 sky_top_color = Color(0.091274254, 0.08989797, 0.11097167, 1)
@@ -5173,7 +5174,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.15
 transform = Transform3D(-8.940697e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -8.940697e-08, -2.3489842, 0, 12.547655)
 
 [node name="Door9" parent="SetDressingBuilding" unique_id=1753615223 instance=ExtResource("18_n3syt")]
-transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 0.15101588, 0, 20.4)
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -6.3489842, 0, 20.399998)
 
 [node name="Door10" parent="SetDressingBuilding" unique_id=1798793223 instance=ExtResource("19_jg26c")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.4126686, 6.203926e-17, -18.423777)
@@ -5191,10 +5192,13 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.42
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.379706, 0.0089169815, 30.974783)
 
 [node name="Door2Small2" parent="SetDressingBuilding" unique_id=1311942584 instance=ExtResource("20_353n8")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.5591493, 0.0089169815, 32.39711)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 5.5591493, 0.0089169815, 30.39711)
 
 [node name="Door2Small3" parent="SetDressingBuilding" unique_id=640869081 instance=ExtResource("20_353n8")]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 4.8591495, 0.0089169815, 24.553112)
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 4.85915, 0.0089169815, 21.153112)
+
+[node name="Desk" parent="SetDressingBuilding" unique_id=1407310822 instance=ExtResource("23_353n8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -4, 0, 29.4)
 
 [node name="SetDressingOutside" type="Node" parent="." unique_id=727757946 groups=["geometry"]]
 

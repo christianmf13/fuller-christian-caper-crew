@@ -16,6 +16,7 @@ extends CharacterBody3D
 ## Can we press to enter freefly mode (noclip)?
 @export var can_freefly : bool = false
 
+
 @export_group("Speeds")
 ## Look around rotation speed.
 @export var look_speed : float = 0.002
@@ -48,6 +49,7 @@ var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
+
 
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
@@ -94,10 +96,10 @@ func _physics_process(delta: float) -> void:
 	if can_jump:
 		if Input.is_action_just_pressed(input_jump) and is_on_floor():
 			velocity.y = jump_velocity
-
+	
 	# Modify speed based on sprinting
 	if can_sprint and Input.is_action_pressed(input_sprint):
-			move_speed = sprint_speed
+		move_speed = sprint_speed
 	else:
 		move_speed = base_speed
 
