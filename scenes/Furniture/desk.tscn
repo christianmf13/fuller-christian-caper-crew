@@ -15,7 +15,7 @@ size = Vector3(0.6330078, 0.3243164, 0.035058588)
 size = Vector3(0.23400879, 0.079064935, 0.2048645)
 
 [node name="Desk" type="StaticBody3D" unique_id=1407310822]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
 
 [node name="desk" parent="." unique_id=74899822 instance=ExtResource("1_e8bct")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35105717, 0, 0.29131246)

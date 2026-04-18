@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://3ff7apjtfo7q"]
+
+[ext_resource type="Script" uid="uid://bqkb343t3s0i1" path="res://addons/custom_proto_controller/custom_proto_controller.gd" id="1_qhypi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhypi"]
+albedo_color = Color(0.101960786, 1, 0.35686275, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_rji43"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rji43"]
+radius = 0.4
+height = 1.8
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_qhypi"]
+radius = 0.4
+height = 1.0
+
+[node name="ProtoController" type="CharacterBody3D" unique_id=1679509675]
+collision_layer = 2
+script = ExtResource("1_qhypi")
+mouse_sens = 0.1
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=450225598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.90145385, 0)
+material_override = SubResource("StandardMaterial3D_qhypi")
+mesh = SubResource("CapsuleMesh_rji43")
+
+[node name="StandingCollisionShape" type="CollisionShape3D" parent="." unique_id=546112739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9042568, 0)
+shape = SubResource("CapsuleShape3D_rji43")
+
+[node name="CrouchingCollisionShape" type="CollisionShape3D" parent="." unique_id=1285011034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5051632, 0)
+shape = SubResource("CapsuleShape3D_qhypi")
+disabled = true
+
+[node name="Head" type="Node3D" parent="." unique_id=1263009820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=1808663173]
+
+[node name="UncrouchDetection" type="RayCast3D" parent="." unique_id=797023821]
+target_position = Vector3(0, 1.8, 0)
