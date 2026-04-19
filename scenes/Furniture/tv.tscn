@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://boh2f01u84l4m"]
+
+[ext_resource type="PackedScene" uid="uid://boc6r3fi3gsjl" path="res://assets/furniture/Models/GLTF format/televisionModern.glb" id="1_vwa2v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u60dl"]
+size = Vector3(0.69212645, 0.4619751, 0.13608399)
+
+[node name="TV" type="StaticBody3D" unique_id=836028471]
+
+[node name="televisionModern" parent="." unique_id=19675434 instance=ExtResource("1_vwa2v")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=727310753]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000103741884, 0.2281189, -0.001977548)
+shape = SubResource("BoxShape3D_u60dl")

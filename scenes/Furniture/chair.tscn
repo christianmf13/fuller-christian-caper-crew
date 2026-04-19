@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cw7qpyoib6i5d"]
+
+[ext_resource type="PackedScene" uid="uid://dxekikogmx8et" path="res://assets/furniture/Models/GLTF format/chairModernFrameCushion.glb" id="1_bmubs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fo0lm"]
+size = Vector3(0.2, 0.27288818, 0.032910157)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cha0b"]
+size = Vector3(0.2, 0.049487304, 0.17115478)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_268fd"]
+size = Vector3(0.2, 0.19179687, 0.02998047)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hqjmy"]
+size = Vector3(0.2, 0.029614259, 0.17080078)
+
+[node name="Chair" type="StaticBody3D" unique_id=192848712]
+
+[node name="chairModernFrameCushion" parent="." unique_id=667500428 instance=ExtResource("1_bmubs")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1577771399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099999994, 0.32632446, -0.18422851)
+shape = SubResource("BoxShape3D_fo0lm")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=530961097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099999994, 0.21514891, -0.08522342)
+shape = SubResource("BoxShape3D_cha0b")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1337137104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099999994, 0.09589843, -0.014501967)
+shape = SubResource("BoxShape3D_268fd")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=1401587413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.099999994, 0.014807142, -0.114599615)
+shape = SubResource("BoxShape3D_hqjmy")

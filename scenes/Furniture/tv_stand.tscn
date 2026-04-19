@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://2ywakaupnkd5"]
+
+[ext_resource type="PackedScene" uid="uid://ce2mtmkiidhla" path="res://assets/furniture/Models/GLTF format/cabinetTelevisionDoors.glb" id="1_g7cwo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_15gsy"]
+size = Vector3(0.8, 0.31259766, 0.25498047)
+
+[node name="TVStand" type="StaticBody3D" unique_id=1415641838]
+
+[node name="cabinetTelevisionDoors" parent="." unique_id=1352170880 instance=ExtResource("1_g7cwo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1356876434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.40000007, 0.15581052, -0.12407224)
+shape = SubResource("BoxShape3D_15gsy")

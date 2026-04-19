@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://c1hxvycwo25h2"]
+
+[ext_resource type="PackedScene" uid="uid://c11d07bs1irhm" path="res://assets/furniture/Models/GLTF format/loungeDesignSofa.glb" id="1_11yxn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r1hjh"]
+size = Vector3(0.16103515, 0.33244628, 0.40947264)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2mjej"]
+size = Vector3(0.16103515, 0.33071288, 0.4088623)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iy3pr"]
+size = Vector3(0.80200195, 0.18154296, 0.28245848)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vve77"]
+size = Vector3(0.8023437, 0.3479492, 0.12939453)
+
+[node name="Sofa" type="StaticBody3D" unique_id=1260336178]
+
+[node name="loungeDesignSofa" parent="." unique_id=2058030927 instance=ExtResource("1_11yxn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=4291109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08051761, 0.16683346, -0.2055298)
+shape = SubResource("BoxShape3D_r1hjh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2006898355]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0394049, 0.16596676, -0.20601813)
+shape = SubResource("BoxShape3D_2mjej")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=426242340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5604248, 0.14118657, -0.14109495)
+shape = SubResource("BoxShape3D_iy3pr")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=1067191760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5608643, 0.22602542, -0.34545898)
+shape = SubResource("BoxShape3D_vve77")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://26rhe4r8mow0"]
+
+[ext_resource type="PackedScene" uid="uid://cgjr1tnht6mcg" path="res://assets/furniture/Models/GLTF format/pottedPlant.glb" id="1_hk617"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q8w24"]
+size = Vector3(0.20991822, 0.6577393, 0.22989503)
+
+[node name="PottedPlant" type="StaticBody3D" unique_id=1897514649]
+
+[node name="pottedPlant" parent="." unique_id=256392565 instance=ExtResource("1_hk617")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2097328443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00055232644, 0.3288697, -0.0015442148)
+shape = SubResource("BoxShape3D_q8w24")

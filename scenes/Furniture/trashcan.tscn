@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ds3e7u4u0vdgg"]
+
+[ext_resource type="PackedScene" uid="uid://dd3kn04lc5ajc" path="res://assets/furniture/Models/GLTF format/trashcan.glb" id="1_7bion"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_67pkc"]
+size = Vector3(0.20716552, 0.42708743, 0.23310547)
+
+[node name="Trashcan" type="StaticBody3D" unique_id=1678698789]
+
+[node name="trashcan" parent="." unique_id=11988449 instance=ExtResource("1_7bion")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=716794353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00018918514, 0.21387333, 0.0052245855)
+shape = SubResource("BoxShape3D_67pkc")
