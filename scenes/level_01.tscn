@@ -5515,6 +5515,24 @@ transform = Transform3D(-1.7320509, 0, -0.9999997, 0, 2, 0, 0.9999997, 0, -1.732
 [node name="plantSmall1" parent="SetDressingBuilding" unique_id=1346225855 instance=ExtResource("35_px1o1")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -5.2000003, 1.5363548, 29.5)
 
+[node name="plantSmall2" parent="SetDressingBuilding" unique_id=1834615875 instance=ExtResource("38_1slps")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4.5000005, 1.5374172, 3.5)
+
+[node name="plantSmall3" parent="SetDressingBuilding" unique_id=278542476 instance=ExtResource("39_xymgi")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.9, 1.540778, 5.45)
+
+[node name="plantSmall4" parent="SetDressingBuilding" unique_id=1648586992 instance=ExtResource("38_1slps")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 13.6, 1.5372432, 9.95)
+
+[node name="plantSmall5" parent="SetDressingBuilding" unique_id=1131708185 instance=ExtResource("35_px1o1")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 13.900001, 1.5362575, 0.2)
+
+[node name="plantSmall6" parent="SetDressingBuilding" unique_id=1457437259 instance=ExtResource("39_xymgi")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -14, 1.5368367, -13.7)
+
+[node name="plantSmall7" parent="SetDressingBuilding" unique_id=1155695047 instance=ExtResource("38_1slps")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -13.7, 1.5389923, -0.90000004)
+
 [node name="SetDressingOutside" type="Node" parent="." unique_id=727757946 groups=["geometry"]]
 
 [node name="ParkingLotEdge" parent="SetDressingOutside" unique_id=950771006 instance=ExtResource("14_cr2eh")]
@@ -6959,21 +6977,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0922623, -0.6337893, 35.335
 
 [node name="ParkingLotCenter379" parent="SetDressingOutside" unique_id=1598639678 instance=ExtResource("15_cy6r3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0922623, -0.6337893, 34.622795)
-
-[node name="plantSmall2" parent="." unique_id=1834615875 instance=ExtResource("38_1slps")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -4.5000005, 1.5374172, 3.5)
-
-[node name="plantSmall3" parent="." unique_id=278542476 instance=ExtResource("39_xymgi")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 4.9, 1.540778, 5.45)
-
-[node name="plantSmall4" parent="." unique_id=1648586992 instance=ExtResource("38_1slps")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 13.6, 1.5372432, 9.95)
-
-[node name="plantSmall1" parent="." unique_id=1131708185 instance=ExtResource("35_px1o1")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 13.900001, 1.5362575, 0.2)
-
-[node name="plantSmall5" parent="." unique_id=1457437259 instance=ExtResource("39_xymgi")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -14, 1.5368367, -13.7)
-
-[node name="plantSmall6" parent="." unique_id=1155695047 instance=ExtResource("38_1slps")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -13.7, 1.5389923, -0.90000004)
