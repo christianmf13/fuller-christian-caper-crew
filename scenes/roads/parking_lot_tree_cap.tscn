@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cerxwwb27dir1"]
 
-[ext_resource type="ArrayMesh" uid="uid://d2uun6iii321m" path="res://assets/roads/Models/roadTile_055.obj" id="1_k22e7"]
+[ext_resource type="ArrayMesh" uid="uid://d2uun6iii321m" path="res://assets/imported/roads/Models/roadTile_055.obj" id="1_k22e7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_11isf"]
 size = Vector3(3, 0.6305664, 3)

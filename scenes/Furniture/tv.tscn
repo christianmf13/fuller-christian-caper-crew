@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://boh2f01u84l4m"]
 
-[ext_resource type="PackedScene" uid="uid://boc6r3fi3gsjl" path="res://assets/furniture/Models/GLTF format/televisionModern.glb" id="1_vwa2v"]
+[ext_resource type="PackedScene" uid="uid://boc6r3fi3gsjl" path="res://assets/imported/furniture/Models/GLTF format/televisionModern.glb" id="1_vwa2v"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_u60dl"]
 size = Vector3(0.69212645, 0.4619751, 0.13608399)

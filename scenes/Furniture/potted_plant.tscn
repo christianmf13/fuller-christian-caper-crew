@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://26rhe4r8mow0"]
 
-[ext_resource type="PackedScene" uid="uid://cgjr1tnht6mcg" path="res://assets/furniture/Models/GLTF format/pottedPlant.glb" id="1_hk617"]
+[ext_resource type="PackedScene" uid="uid://cgjr1tnht6mcg" path="res://assets/imported/furniture/Models/GLTF format/pottedPlant.glb" id="1_hk617"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q8w24"]
 size = Vector3(0.20991822, 0.6577393, 0.22989503)

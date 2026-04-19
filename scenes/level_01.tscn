@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://dmdnn8l7avpnr"]
 
-[ext_resource type="PackedScene" uid="uid://b2cegr5n3lrvv" path="res://scenes/blockout.tscn" id="1_4lj41"]
 [ext_resource type="PackedScene" uid="uid://b3ktc2sti5m1v" path="res://scenes/Enemies/basic_enemy.tscn" id="3_mofoo"]
 [ext_resource type="PackedScene" uid="uid://corxgqolmuqt6" path="res://scenes/buildings/wall_doorway_wide_square.tscn" id="4_t0ybu"]
 [ext_resource type="PackedScene" uid="uid://mf1drupjw8o3" path="res://scenes/buildings/wall.tscn" id="5_1b6n0"]
@@ -33,12 +32,12 @@
 [ext_resource type="PackedScene" uid="uid://cw7qpyoib6i5d" path="res://scenes/Furniture/chair.tscn" id="29_luive"]
 [ext_resource type="PackedScene" uid="uid://2ywakaupnkd5" path="res://scenes/Furniture/tv_stand.tscn" id="30_luive"]
 [ext_resource type="PackedScene" uid="uid://boh2f01u84l4m" path="res://scenes/Furniture/tv.tscn" id="31_6y7lq"]
-[ext_resource type="PackedScene" uid="uid://5jr7kk7pduyl" path="res://assets/furniture/Models/GLTF format/computerKeyboard.glb" id="32_jvtd8"]
-[ext_resource type="PackedScene" uid="uid://cojytafhsfg12" path="res://assets/furniture/Models/GLTF format/computerMouse.glb" id="33_auax2"]
-[ext_resource type="PackedScene" uid="uid://s5m4av2tpfdx" path="res://assets/furniture/Models/GLTF format/computerScreen.glb" id="34_vb0mg"]
-[ext_resource type="PackedScene" uid="uid://bcq0f62ogihgx" path="res://assets/furniture/Models/GLTF format/plantSmall1.glb" id="35_px1o1"]
-[ext_resource type="PackedScene" uid="uid://bj3buyi6n0mvp" path="res://assets/furniture/Models/GLTF format/plantSmall2.glb" id="38_1slps"]
-[ext_resource type="PackedScene" uid="uid://bwl5mik8wdoyf" path="res://assets/furniture/Models/GLTF format/plantSmall3.glb" id="39_xymgi"]
+[ext_resource type="PackedScene" uid="uid://5jr7kk7pduyl" path="res://assets/imported/furniture/Models/GLTF format/computerKeyboard.glb" id="32_jvtd8"]
+[ext_resource type="PackedScene" uid="uid://cojytafhsfg12" path="res://assets/imported/furniture/Models/GLTF format/computerMouse.glb" id="33_auax2"]
+[ext_resource type="PackedScene" uid="uid://s5m4av2tpfdx" path="res://assets/imported/furniture/Models/GLTF format/computerScreen.glb" id="34_vb0mg"]
+[ext_resource type="PackedScene" uid="uid://bcq0f62ogihgx" path="res://assets/imported/furniture/Models/GLTF format/plantSmall1.glb" id="35_px1o1"]
+[ext_resource type="PackedScene" uid="uid://bj3buyi6n0mvp" path="res://assets/imported/furniture/Models/GLTF format/plantSmall2.glb" id="38_1slps"]
+[ext_resource type="PackedScene" uid="uid://bwl5mik8wdoyf" path="res://assets/imported/furniture/Models/GLTF format/plantSmall3.glb" id="39_xymgi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nr3cb"]
 sky_top_color = Color(0.091274254, 0.08989797, 0.11097167, 1)
@@ -66,8 +65,8 @@ geometry_source_group_name = &"geometry"
 
 [node name="level01" type="Node3D" unique_id=830540172]
 
-[node name="ProtoController2" parent="." unique_id=1679509675 groups=["player"] instance=ExtResource("23_4rfup")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.7, 0, 8.3)
+[node name="player" parent="." unique_id=1679509675 groups=["player"] instance=ExtResource("23_4rfup")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.7, 0.1, 13.9)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=959960981]
 environment = SubResource("Environment_qgxqk")
@@ -79,7 +78,7 @@ shadow_enabled = true
 [node name="WorldBoundary" type="StaticBody3D" parent="." unique_id=1340138017]
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="WorldBoundary" unique_id=1667653731]
-transform = Transform3D(-4.3711392e-08, 0.014747561, 0.99989116, 1, 6.4463906e-10, 4.3706635e-08, 0, 0.99989116, -0.014747561, -0.014731083, -1.5333374e-06, -37.49001)
+transform = Transform3D(-4.3711392e-08, 0.003106745, 0.99999505, 1, 1.3580281e-10, 4.3711175e-08, 0, 0.99999505, -0.003106745, 0.0044407547, -1.5324993e-06, -36.19015)
 shape = SubResource("WorldBoundaryShape3D_4lj41")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WorldBoundary" unique_id=966887666]
@@ -87,23 +86,16 @@ transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 37.5
 shape = SubResource("WorldBoundaryShape3D_4lj41")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="WorldBoundary" unique_id=616461074]
-transform = Transform3D(-4.3711392e-08, -8.742277e-08, -0.99999994, 1, -1.1568357e-15, -4.371139e-08, 0, -0.99999994, 8.742277e-08, -0.016382158, -1.5334092e-06, 37.405518)
+transform = Transform3D(-4.3711392e-08, -8.742277e-08, -0.99999994, 1, -1.1568357e-15, -4.371139e-08, 0, -0.99999994, 8.742277e-08, -0.016381826, -1.5334092e-06, 41.205517)
 shape = SubResource("WorldBoundaryShape3D_4lj41")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="WorldBoundary" unique_id=2070873040]
-transform = Transform3D(-4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, -3.821371e-15, 0, -8.742278e-08, -1, -37.365993, -3.1660124e-06, 0)
+transform = Transform3D(-4.371139e-08, 1, -8.742278e-08, 1, 4.371139e-08, -3.821371e-15, 0, -8.742278e-08, -1, -36.765995, -3.1397856e-06, -5.2453668e-08)
 shape = SubResource("WorldBoundaryShape3D_mofoo")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=1515258984]
 visible = false
 navigation_mesh = SubResource("NavigationMesh_mofoo")
-
-[node name="Blockout" parent="." unique_id=1726371248 groups=["geometry"] instance=ExtResource("1_4lj41")]
-transform = Transform3D(-1.5, 0, 2.2649371e-07, 0, 1.5, 0, -2.2649371e-07, 0, -1.5, 0, 0, 0)
-visible = false
-use_collision = true
-collision_layer = 0
-collision_mask = 0
 
 [node name="Lights" type="Node" parent="." unique_id=1372353508]
 
@@ -369,7 +361,9 @@ End Point
 (getaway car here)"
 
 [node name="BasicEnemy" parent="." unique_id=1449157707 instance=ExtResource("3_mofoo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.771608, 0.07500005, -3.8397546)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.771608, 0.27500004, -3.8397546)
+collision_layer = 1
+collision_mask = 1
 
 [node name="SetDressingBuilding" type="Node" parent="." unique_id=175654195 groups=["geometry"]]
 
@@ -6977,3 +6971,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0922623, -0.6337893, 35.335
 
 [node name="ParkingLotCenter379" parent="SetDressingOutside" unique_id=1598639678 instance=ExtResource("15_cy6r3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0922623, -0.6337893, 34.622795)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=513416928]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.400002, 0.9, 2.6999998)
+use_collision = true
+size = Vector3(2, 2, 2)

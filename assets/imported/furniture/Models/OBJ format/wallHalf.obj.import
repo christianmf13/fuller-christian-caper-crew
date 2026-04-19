@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd18047o16kmi"
+path="res://.godot/imported/wallHalf.obj-d05d8a50d4c5c9668ec616434275befe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wallHalf.obj-d05d8a50d4c5c9668ec616434275befe.mesh"]
+
+source_file="res://assets/imported/furniture/Models/OBJ format/wallHalf.obj"
+dest_files=["res://.godot/imported/wallHalf.obj-d05d8a50d4c5c9668ec616434275befe.mesh", "res://.godot/imported/wallHalf.obj-d05d8a50d4c5c9668ec616434275befe.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://dgmkjdego8006"]
 
-[ext_resource type="PackedScene" uid="uid://c8m45mmoy41ia" path="res://assets/buildings/Models/GLB format/door-rotate-square-a.glb" id="1_hxe6u"]
+[ext_resource type="Script" uid="uid://cj30juhx6blp3" path="res://scripts/interactable objects/door_1.gd" id="1_2pdx1"]
+[ext_resource type="PackedScene" uid="uid://c8m45mmoy41ia" path="res://assets/imported/buildings/Models/GLB format/door-rotate-square-a.glb" id="1_hxe6u"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2pdx1"]
 size = Vector3(0.15406494, 2.1000001, 0.90000004)
 
 [node name="Door1" type="StaticBody3D" unique_id=1747216830]
+script = ExtResource("1_2pdx1")
+prompt_message = "Open"
 
 [node name="door-rotate-square-a2" parent="." unique_id=188279678 instance=ExtResource("1_hxe6u")]
 

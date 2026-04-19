@@ -7,21 +7,33 @@
 [ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="4_j4l5y"]
 [ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="5_5dvhc"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_p1k8i"]
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_p1k8i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1k8i"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ucyoi"]
+material = SubResource("StandardMaterial3D_p1k8i")
+radius = 0.25
+height = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u3mp1"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_p1k8i"]
-radius = 5.0
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j4l5y"]
+points = PackedVector3Array(-0.00019574165, 1, -0.00019574165, 0.19498825, -1, -0.9808144, -0.00019574165, -1, -1, -0.19518405, -1, -0.9808144, -0.382733, -1, -0.92404073, -0.5555991, -1, -0.83163667, -0.7071261, -1, -0.7071261, -0.83163667, -1, -0.5555991, -0.92404073, -1, -0.382733, -0.9808144, -1, -0.19518405, -1, -1, -0.00019574165, -0.9808144, -1, 0.19498825, -0.92404073, -1, 0.38253725, -0.83163667, -1, 0.55540323, -0.7071261, -1, 0.7069303, -0.5555991, -1, 0.8314409, -0.382733, -1, 0.92384493, -0.19518405, -1, 0.9806186, -0.00019574165, -1, 1, 0.19498825, -1, 0.9806186, 0.38253725, -1, 0.92384493, 0.55540323, -1, 0.8314409, 0.7069303, -1, 0.7069303, 0.8314409, -1, 0.55540323, 0.92384493, -1, 0.38253725, 0.9806186, -1, 0.19498825, 1, -1, -0.00019574165, 0.9806186, -1, -0.19518405, 0.92384493, -1, -0.382733, 0.8314409, -1, -0.5555991, 0.7069303, -1, -0.7071261, 0.55540323, -1, -0.83163667, 0.38253725, -1, -0.92404073)
 
 [node name="BasicEnemy" type="CharacterBody3D" unique_id=1449157707]
+collision_layer = 0
+collision_mask = 3
 script = ExtResource("1_kqsun")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1294155852]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("BoxMesh_p1k8i")
 mesh = SubResource("CapsuleMesh_p1k8i")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1859928981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0.5)
+mesh = SubResource("SphereMesh_ucyoi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1195473395]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -62,12 +74,31 @@ event = &"toFollow"
 delay_in_seconds = "0.0"
 
 [node name="DetectionArea" type="Area3D" parent="." unique_id=143393498]
+transform = Transform3D(1, 0, 0, 0, 0.96592575, -0.25881895, 0, 0.25881895, 0.96592575, 0, 1.9, 0)
 collision_mask = 2
 monitorable = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="DetectionArea" unique_id=294172162]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("SphereShape3D_p1k8i")
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="DetectionArea" unique_id=1418203111]
+transform = Transform3D(-1.2363444e-07, 2.1414118e-07, -4, 3.8637033, -1.0352762, -1.7484551e-07, -1.0352762, -3.8637033, -1.7484555e-07, -2.2325284e-07, 0.8406697, 4.2667594)
+shape = SubResource("ConvexPolygonShape3D_j4l5y")
 
+[node name="VisionTimer" type="Timer" parent="." unique_id=1037213860]
+wait_time = 0.25
+autostart = true
+
+[node name="VisionRaycast" type="RayCast3D" parent="." unique_id=552026616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+target_position = Vector3(0, 0, 100)
+collision_mask = 2
+debug_shape_custom_color = Color(0.712692, 2.9359758e-06, 5.7756904e-07, 1)
+debug_shape_thickness = 5
+
+[node name="DetectionTimer" type="Timer" parent="." unique_id=228563826]
+wait_time = 30.0
+
+[connection signal="state_entered" from="StateChart/Root/IdleState" to="." method="_on_idle_state_state_entered"]
 [connection signal="state_physics_processing" from="StateChart/Root/FollowState" to="." method="_on_follow_state_physics_processing"]
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="VisionTimer" to="." method="_on_vision_timer_timeout"]
+[connection signal="timeout" from="DetectionTimer" to="." method="_on_detection_timer_timeout"]

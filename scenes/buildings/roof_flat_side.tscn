@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://56j2rnmwpjsb"]
 
-[ext_resource type="PackedScene" uid="uid://cw0ttqyfflq43" path="res://assets/buildings/Models/GLB format/roof-flat-side.glb" id="1_pjib3"]
+[ext_resource type="PackedScene" uid="uid://cw0ttqyfflq43" path="res://assets/imported/buildings/Models/GLB format/roof-flat-side.glb" id="1_pjib3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_po7tu"]
 size = Vector3(1.5, 0.1, 2)

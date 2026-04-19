@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ds3e7u4u0vdgg"]
 
-[ext_resource type="PackedScene" uid="uid://dd3kn04lc5ajc" path="res://assets/furniture/Models/GLTF format/trashcan.glb" id="1_7bion"]
+[ext_resource type="PackedScene" uid="uid://dd3kn04lc5ajc" path="res://assets/imported/furniture/Models/GLTF format/trashcan.glb" id="1_7bion"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_67pkc"]
 size = Vector3(0.20716552, 0.42708743, 0.23310547)
