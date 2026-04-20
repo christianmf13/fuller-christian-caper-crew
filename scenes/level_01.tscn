@@ -38,6 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://bcq0f62ogihgx" path="res://assets/imported/furniture/Models/GLTF format/plantSmall1.glb" id="35_px1o1"]
 [ext_resource type="PackedScene" uid="uid://bj3buyi6n0mvp" path="res://assets/imported/furniture/Models/GLTF format/plantSmall2.glb" id="38_1slps"]
 [ext_resource type="PackedScene" uid="uid://be0qi7ky32x1m" path="res://scenes/Furniture/vault_tables.tscn" id="39_1slps"]
+[ext_resource type="PackedScene" uid="uid://b0ursvny7ycs7" path="res://scenes/interactables/getaway_car.tscn" id="39_xxwq1"]
 [ext_resource type="PackedScene" uid="uid://bwl5mik8wdoyf" path="res://assets/imported/furniture/Models/GLTF format/plantSmall3.glb" id="39_xymgi"]
 [ext_resource type="PackedScene" uid="uid://fv5geywt0jcj" path="res://scenes/interactables/diamond.tscn" id="40_xymgi"]
 [ext_resource type="PackedScene" uid="uid://dgkac45fk42ii" path="res://scenes/interactables/gold_bar.tscn" id="41_rt40s"]
@@ -4568,7 +4569,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -4.8421407, -4.592512, 19.849922)
 
 [node name="DoorVault" parent="SetDressingBuilding" unique_id=815113990 instance=ExtResource("16_n3syt")]
-transform = Transform3D(1.7320508, 0, -1, 0, 2, 0, 1, 0, 1.7320508, 0.09940541, -4.8432527, 23.436407)
+transform = Transform3D(-1.1920929e-07, 0, 2, 0, 2, 0, -2, 0, -1.1920929e-07, 0.09940541, -4.8432527, 23.436407)
 
 [node name="BigDoorway" parent="SetDressingBuilding" unique_id=988979449 instance=ExtResource("17_wqkcq")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1, -4.864499, 23.5)
@@ -5111,37 +5112,37 @@ transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 1.
 transform = Transform3D(-1.1920929e-07, 0, -1, 0, 1, 0, 1, 0, -1.1920929e-07, 3.3270555, 2.30015, 32.09779)
 
 [node name="Door1" parent="SetDressingBuilding" unique_id=1747216830 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-0.50000006, 0, -0.8660254, 0, 1, 0, 0.8660254, 0, -0.50000006, -7.7489843, 0, -13)
+transform = Transform3D(0.9994765, 0, -0.03235276, 0, 1, 0, 0.03235276, 0, 0.9994765, -7.7489843, 0, -13)
 
 [node name="Door2" parent="SetDressingBuilding" unique_id=1484329869 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-0.7071067, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, -0.7071067, -7.7489843, 0, -0.99999964)
+transform = Transform3D(0.9994077, 0, 0.034411088, 0, 1, 0, -0.034411088, 0, 0.9994077, -7.7489843, 0, -0.99999964)
 
 [node name="Door3" parent="SetDressingBuilding" unique_id=1094726432 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, -0.70710677, -7.7489843, 0, 9)
+transform = Transform3D(0.99970263, 0, -0.024379864, 0, 1, 0, 0.024379864, 0, 0.99970263, -7.7489843, 0, 9)
 
 [node name="Door4" parent="SetDressingBuilding" unique_id=1972260484 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 8.051016, 0, 9)
+transform = Transform3D(-0.9991418, 0, 0.0414223, 0, 1, 0, -0.0414223, 0, -0.9991418, 8.026983, 0, 9.899254)
 
 [node name="Door5" parent="SetDressingBuilding" unique_id=277595364 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.051016, 0, -1.0000006)
+transform = Transform3D(-0.99983937, 0, 0.017923474, 0, 1, 0, -0.017923474, 0, -0.99983937, 8.035045, 0, -0.109065905)
 
 [node name="Door6" parent="SetDressingBuilding" unique_id=771184881 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-0.50000006, 0, 0.8660254, 0, 1, 0, -0.8660254, 0, -0.50000006, 8.051016, 0, -13)
+transform = Transform3D(-0.9998961, 0, 0.01441583, 0, 1, 0, -0.01441583, 0, -0.9998961, 8.038331, 0, -12.120107)
 
 [node name="Door7" parent="SetDressingBuilding" unique_id=1893303588 instance=ExtResource("18_n3syt")]
-transform = Transform3D(0.7071067, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, 0.7071067, 0.15101588, 0, 15.9)
+transform = Transform3D(0.99991524, 0, -0.0130198, 0, 1, 0, 0.0130198, 0, 0.99991524, 0.16243972, 0, 15.022655)
 
 [node name="Door8" parent="SetDressingBuilding" unique_id=1422163055 instance=ExtResource("18_n3syt")]
-transform = Transform3D(0.70710677, 0, 0.70710665, 0, 1, 0, -0.70710665, 0, 0.70710677, -2.3489842, 0, 12.547655)
+transform = Transform3D(5.9604645e-08, 0, 0.9999999, 0, 1, 0, -0.9999999, 0, 5.9604645e-08, -3.2282214, 0, 12.547655)
 
 [node name="Door9" parent="SetDressingBuilding" unique_id=1753615223 instance=ExtResource("18_n3syt")]
-transform = Transform3D(-0.86602545, 0, -0.4999999, 0, 1, 0, 0.4999999, 0, -0.86602545, 0.15101606, 0, 20.4)
+transform = Transform3D(0.99994844, 0, -0.010140292, 0, 1, 0, 0.010140292, 0, 0.99994844, 0.15139288, 0, 20.36284)
 
 [node name="FrontDoor1" parent="SetDressingBuilding" unique_id=1798793223 instance=ExtResource("19_jg26c")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.4126686, 6.203926e-17, -18.423777)
 
 [node name="FrontDoor2" parent="SetDressingBuilding" unique_id=798459954 instance=ExtResource("19_jg26c")]
-transform = Transform3D(-0.7071067, 0, 0.7071068, 0, 1, 0, -0.7071068, 0, -0.7071067, 1.4274619, 6.203926e-17, -18.423777)
+transform = Transform3D(-5.9604645e-08, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -5.9604645e-08, 1.4274619, 6.203926e-17, -18.423777)
 
 [node name="FrontDoor3" parent="SetDressingBuilding" unique_id=1199235949 instance=ExtResource("19_jg26c")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.4126686, 6.203926e-17, -27.423779)
@@ -5150,13 +5151,13 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.4
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.4274619, 6.203926e-17, -27.423779)
 
 [node name="Door2Small" parent="SetDressingBuilding" unique_id=355481802 instance=ExtResource("20_353n8")]
-transform = Transform3D(-0.8660254, 0, -0.50000006, 0, 1, 0, 0.50000006, 0, -0.8660254, 4.379706, 0.0089169815, 30.974783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.379706, 0.0089169815, 30.974783)
 
 [node name="Door2Small2" parent="SetDressingBuilding" unique_id=1311942584 instance=ExtResource("20_353n8")]
-transform = Transform3D(-0.25881892, 0, 0.9659258, 0, 1, 0, -0.9659258, 0, -0.25881892, 5.5591493, 0.0089169815, 32.39711)
+transform = Transform3D(-2.0861626e-07, 0, -0.99999994, 0, 1, 0, 0.99999994, 0, -2.0861626e-07, 5.5591493, 0.0089169815, 32.39711)
 
 [node name="Door2Small3" parent="SetDressingBuilding" unique_id=640869081 instance=ExtResource("20_353n8")]
-transform = Transform3D(0.8660253, 0, -0.5000002, 0, 1, 0, 0.5000002, 0, 0.8660253, 4.8591495, 0.0089169815, 24.553112)
+transform = Transform3D(1.1920929e-07, 0, 1, 0, 1, 0, -1, 0, 1.1920929e-07, 4.8591495, 0.0089169815, 24.553112)
 
 [node name="Desk" parent="SetDressingBuilding" unique_id=1407310822 instance=ExtResource("23_353n8")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.4, 0, 28.800001)
@@ -5544,6 +5545,9 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -5.5954065, 4.7683716e-07, -1
 
 [node name="PottedPlant12" parent="SetDressingBuilding" unique_id=988759573 instance=ExtResource("26_a577o")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.0954065, 4.7683716e-07, -16.322695)
+
+[node name="GetawayCar" parent="SetDressingBuilding" unique_id=760797605 instance=ExtResource("39_xxwq1")]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, -31.9, 0, 0.2)
 
 [node name="SetDressingOutside" type="Node" parent="." unique_id=727757946 groups=["geometry"]]
 
@@ -7001,43 +7005,43 @@ transform = Transform3D(0.20652439, 0.19239408, 0.10164738, -0.10025011, 0.20851
 item_value = 5
 
 [node name="GoldBar" parent="Interactables" unique_id=2086414206 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.546389, -3.4942284, 17.494034)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.546389, -3.5446963, 17.494034)
 
 [node name="GoldBar2" parent="Interactables" unique_id=346362843 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.3863889, -3.4942284, 17.494034)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.3863889, -3.5456488, 17.494034)
 
 [node name="GoldBar3" parent="Interactables" unique_id=2066496725 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.706389, -3.4942284, 17.494034)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.706389, -3.5452917, 17.494034)
 
 [node name="GoldBar4" parent="Interactables" unique_id=870469858 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.86638904, -3.4942284, 17.494034)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 0.86638904, -3.5442595, 17.494034)
 
 [node name="GoldBar5" parent="Interactables" unique_id=599161156 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 1.026389, -3.4942284, 17.494034)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 1.026389, -3.5456293, 17.494034)
 
 [node name="GoldBar6" parent="Interactables" unique_id=2084052262 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-0.4, 0, 3.4969112e-08, 0, 0.4, 0, -3.4969112e-08, 0, -0.4, 0.5078484, -3.4942284, 17.780514)
+transform = Transform3D(-0.4, 0, 3.4969112e-08, 0, 0.4, 0, -3.4969112e-08, 0, -0.4, 0.5078484, -3.5446134, 17.780514)
 
 [node name="GoldBar7" parent="Interactables" unique_id=957223969 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-0.4, 0, 3.4969112e-08, 0, 0.4, 0, -3.4969112e-08, 0, -0.4, 0.90784836, -3.4942284, 17.780514)
+transform = Transform3D(-0.4, 0, 3.4969112e-08, 0, 0.4, 0, -3.4969112e-08, 0, -0.4, 0.90784836, -3.5449286, 17.780514)
 
 [node name="GoldBar8" parent="Interactables" unique_id=1089154637 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-0.4, 0, 3.4969112e-08, 0, 0.4, 0, -3.4969112e-08, 0, -0.4, 2.3878484, -3.4942284, 17.780514)
+transform = Transform3D(-0.4, 0, 3.4969112e-08, 0, 0.4, 0, -3.4969112e-08, 0, -0.4, 2.3878484, -3.5459654, 17.780514)
 
 [node name="GoldBar9" parent="Interactables" unique_id=1082521328 instance=ExtResource("41_rt40s")]
-transform = Transform3D(5.2453668e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, 5.2453668e-08, 2.4678483, -3.4942284, 17.500515)
+transform = Transform3D(5.2453668e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, 5.2453668e-08, 2.4678483, -3.5451345, 17.500515)
 
 [node name="GoldBar10" parent="Interactables" unique_id=1449927799 instance=ExtResource("41_rt40s")]
-transform = Transform3D(5.2453668e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, 5.2453668e-08, 2.3078482, -3.4942284, 17.500515)
+transform = Transform3D(5.2453668e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, 5.2453668e-08, 2.3078482, -3.5457976, 17.500515)
 
 [node name="GoldBar11" parent="Interactables" unique_id=1178640654 instance=ExtResource("41_rt40s")]
-transform = Transform3D(5.2453668e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, 5.2453668e-08, 2.1478481, -3.4942284, 17.500515)
+transform = Transform3D(5.2453668e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, 5.2453668e-08, 2.1478481, -3.546603, 17.500515)
 
 [node name="GoldBar12" parent="Interactables" unique_id=1316439165 instance=ExtResource("41_rt40s")]
-transform = Transform3D(0.4, 0, -6.9938224e-08, 0, 0.4, 0, 6.9938224e-08, 0, 0.4, 1.7478482, -3.4942284, 17.500515)
+transform = Transform3D(0.4, 0, -6.9938224e-08, 0, 0.4, 0, 6.9938224e-08, 0, 0.4, 1.7478482, -3.5454943, 17.500515)
 
 [node name="GoldBar13" parent="Interactables" unique_id=309152033 instance=ExtResource("41_rt40s")]
-transform = Transform3D(0.4, 0, -6.9938224e-08, 0, 0.4, 0, 6.9938224e-08, 0, 0.4, 1.7478482, -3.4942284, 17.740515)
+transform = Transform3D(0.4, 0, -6.9938224e-08, 0, 0.4, 0, 6.9938224e-08, 0, 0.4, 1.7478482, -3.5460134, 17.740515)
 
 [node name="MoneyStacks" parent="Interactables" unique_id=1221049670 instance=ExtResource("42_hscr6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5452404, -3.5764534, 14)
@@ -7079,16 +7083,16 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 5.66
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9465914, -3.5764534, 14.912232)
 
 [node name="GoldBar14" parent="Interactables" unique_id=295367446 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.8678484, -3.4942284, 15.420514)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.8678484, -3.546311, 15.420514)
 
 [node name="GoldBar15" parent="Interactables" unique_id=1037477065 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.7047396, -3.4942284, 15.540514)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.7047396, -3.545639, 15.540514)
 
 [node name="GoldBar16" parent="Interactables" unique_id=1312788985 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.537959, -3.4942284, 15.540514)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.537959, -3.545861, 15.540514)
 
 [node name="GoldBar17" parent="Interactables" unique_id=606091897 instance=ExtResource("41_rt40s")]
-transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.463372, -3.4942284, 15.100514)
+transform = Transform3D(-1.7484556e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.7484556e-08, 5.463372, -3.5467029, 15.100514)
 
 [node name="Diamond5" parent="Interactables" unique_id=80435924 instance=ExtResource("40_xymgi")]
 transform = Transform3D(0.74999845, 0.0010838127, -0.0010634621, -0.001518421, 0.53533113, -0.5252792, -6.938412e-11, 0.52528024, 0.53533226, 1.3667135, -3.5534275, 14.163426)
@@ -7191,7 +7195,7 @@ transform = Transform3D(-0.9659258, 0, -0.25881904, 0, 1, 0, 0.25881904, 0, -0.9
 transform = Transform3D(0.054999996, 0, -0.095262796, 0, 0.11, 0, 0.095262796, 0, 0.054999996, 6.2925644, 0.72941417, -17.077463)
 
 [node name="PowerBox" parent="Interactables" unique_id=1499926781 instance=ExtResource("47_wn2an")]
-transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 19.631144, -0.19999999, 9.400001)
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, 19.631144, -0.39999998, 9.400001)
 
 [node name="Marker3D" type="Marker3D" parent="." unique_id=1224167922]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 0.4, 35.1)
@@ -7211,6 +7215,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 0.4, 35.1)
 [connection signal="has_office_keys" from="LevelManager" to="SetDressingBuilding/Door8" method="_on_level_manager_has_office_keys"]
 [connection signal="has_office_keys" from="LevelManager" to="SetDressingBuilding/Door9" method="_on_level_manager_has_office_keys"]
 [connection signal="has_vault_keys" from="LevelManager" to="SetDressingBuilding/DoorVault" method="_on_level_manager_has_vault_keys"]
+[connection signal="power_off" from="LevelManager" to="SetDressingBuilding/Door2Small" method="_on_level_manager_power_off"]
+[connection signal="power_off" from="LevelManager" to="SetDressingBuilding/Door2Small2" method="_on_level_manager_power_off"]
+[connection signal="power_off" from="LevelManager" to="SetDressingBuilding/Door2Small3" method="_on_level_manager_power_off"]
+[connection signal="power_restored" from="LevelManager" to="SetDressingBuilding/Door2Small" method="_on_level_manager_power_restored"]
+[connection signal="power_restored" from="LevelManager" to="SetDressingBuilding/Door2Small2" method="_on_level_manager_power_restored"]
+[connection signal="power_restored" from="LevelManager" to="SetDressingBuilding/Door2Small3" method="_on_level_manager_power_restored"]
+[connection signal="power_restored" from="LevelManager" to="Interactables/PowerBox" method="_on_level_manager_power_restored"]
 [connection signal="diamond_collected" from="Interactables/Diamond2" to="LevelManager" method="_on_diamond_2_diamond_collected"]
 [connection signal="diamond_collected" from="Interactables/Diamond3" to="LevelManager" method="_on_diamond_3_diamond_collected"]
 [connection signal="gold_collected" from="Interactables/GoldBar" to="LevelManager" method="_on_gold_bar_gold_collected"]
@@ -7276,3 +7287,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1, 0.4, 35.1)
 [connection signal="vault_key_obtained" from="Interactables/VaultKey" to="LevelManager" method="_on_vault_key_vault_key_obtained"]
 [connection signal="office_key_obtained" from="Interactables/OfficeKey" to="LevelManager" method="_on_office_key_office_key_obtained"]
 [connection signal="door_key_obtained" from="Interactables/DoorKey" to="LevelManager" method="_on_door_key_door_key_obtained"]
+[connection signal="power_off" from="Interactables/PowerBox" to="LevelManager" method="_on_power_box_power_off"]

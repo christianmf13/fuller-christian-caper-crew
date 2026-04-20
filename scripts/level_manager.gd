@@ -14,8 +14,11 @@ var has_office_key: bool = false
 signal has_office_keys
 signal has_door_key
 var has_front_door_key: bool = false
+var power_on: bool = true
+signal power_off
 var value_reached: bool = false
 signal done_looting
+signal power_restored
 
 func _physics_process(delta: float) -> void:
 	value_tracker.text = "Value: $" + str(value_amount) + "/$" + str(value_goal)
@@ -31,6 +34,7 @@ func end_level_start():
 	if value_reached == true:
 		#print("congrats")
 		done_looting.emit()
+		power_restored.emit()
 	else:
 		pass
 
@@ -181,3 +185,8 @@ func _on_door_key_door_key_obtained() -> void:
 	has_front_door_key = true
 	has_door_key.emit()
 	front_door_key.text = "1x Front Door Key"
+
+func _on_power_box_power_off() -> void:
+	power_on = false
+	power_off.emit()
+	print("power is now off")

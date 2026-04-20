@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b0ursvny7ycs7"]
+
+[ext_resource type="PackedScene" uid="uid://cwbxsn7bycpi" path="res://assets/imported/cars/Models/GLB format/delivery.glb" id="1_eacvo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kdpci"]
+size = Vector3(1.4, 1.6, 3.230371)
+
+[node name="GetawayCar" type="StaticBody3D" unique_id=760797605]
+
+[node name="delivery" parent="." unique_id=2131420055 instance=ExtResource("1_eacvo")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=615968552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9604645e-08, 0.80000013, -0.015185416)
+shape = SubResource("BoxShape3D_kdpci")
