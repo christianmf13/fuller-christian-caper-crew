@@ -10,6 +10,10 @@ extends Node3D
 
 var has_vault_key: bool = false
 signal has_vault_keys
+var has_office_key: bool = false
+signal has_office_keys
+signal has_door_key
+var has_front_door_key: bool = false
 var value_reached: bool = false
 signal done_looting
 
@@ -160,8 +164,20 @@ func _on_money_stacks_24_money_collected() -> void:
 func _on_money_stacks_25_money_collected() -> void:
 	value_amount += 750
 
-
+#vault key logic
 func _on_vault_key_vault_key_obtained() -> void:
 	has_vault_key = true
 	has_vault_keys.emit()
 	vault_key.text = "1x Vault Key"
+
+#office key logic
+func _on_office_key_office_key_obtained() -> void:
+	has_office_key = true
+	has_office_keys.emit()
+	office_key.text = "1x Office Key"
+
+
+func _on_door_key_door_key_obtained() -> void:
+	has_front_door_key = true
+	has_door_key.emit()
+	front_door_key.text = "1x Front Door Key"
