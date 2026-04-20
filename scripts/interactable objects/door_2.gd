@@ -6,4 +6,4 @@ func interact(body):
 	if has_keys:
 		pass
 	else:
-		prompt_message = "This door is locked."
+		prompt_message = "This door is locked. Find front door keys to unlock."

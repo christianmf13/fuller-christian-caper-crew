@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://leo486ajqj3s"]
+
+[ext_resource type="Script" uid="uid://dqgu0hmwe6frw" path="res://scripts/interactable objects/vault_key.gd" id="1_72mgb"]
+[ext_resource type="PackedScene" uid="uid://csiqf8ho1tdqa" path="res://assets/imported/keyring.glb" id="1_td4aq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_72mgb"]
+size = Vector3(1.0541382, 0.28381348, 1.2241821)
+
+[node name="VaultKey" type="StaticBody3D" unique_id=183456671]
+script = ExtResource("1_72mgb")
+
+[node name="keyring2" parent="." unique_id=60190882 instance=ExtResource("1_td4aq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0, 0.3)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1651694669]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17007446, 0.1071167, 0.23666382)
+shape = SubResource("BoxShape3D_72mgb")

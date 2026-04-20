@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ri0mw0lnaq1x"]
+
+[ext_resource type="PackedScene" uid="uid://bel5ju7vu368t" path="res://assets/imported/key.gltf" id="1_2jiow"]
+[ext_resource type="Script" uid="uid://bv16f2tbej5va" path="res://scripts/interactable objects/office_key.gd" id="1_4e3kt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4e3kt"]
+size = Vector3(0.3310791, 0.1, 0.17895508)
+
+[node name="OfficeKey" type="StaticBody3D" unique_id=1398105444]
+script = ExtResource("1_4e3kt")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1711742989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019543454, 0.050000012, -0.016479492)
+shape = SubResource("BoxShape3D_4e3kt")
+
+[node name="key" parent="." unique_id=1813811744 instance=ExtResource("1_2jiow")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

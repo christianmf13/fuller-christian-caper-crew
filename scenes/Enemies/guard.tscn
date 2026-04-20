@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://htj0fqgnj5j6"]
+
+[ext_resource type="Script" uid="uid://dcs1yqoc5skt6" path="res://scenes/Enemies/basic_enemy.gd" id="1_y8o5l"]
+[ext_resource type="Script" uid="uid://cuyt4ec4kv21e" path="res://scripts/components/health_component.gd" id="2_nsbuq"]
+[ext_resource type="Script" uid="uid://couw105c3bde4" path="res://addons/godot_state_charts/state_chart.gd" id="3_hrp8q"]
+[ext_resource type="Script" uid="uid://jk2jm1g6q853" path="res://addons/godot_state_charts/compound_state.gd" id="4_4luvd"]
+[ext_resource type="Script" uid="uid://cytafq8i1y8qm" path="res://addons/godot_state_charts/atomic_state.gd" id="5_6ow0p"]
+[ext_resource type="Script" uid="uid://cf1nsco3w0mf6" path="res://addons/godot_state_charts/transition.gd" id="6_i5w4v"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_p1k8i"]
+radius = 0.3
+height = 1.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1k8i"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ucyoi"]
+material = SubResource("StandardMaterial3D_p1k8i")
+radius = 0.2
+height = 0.4
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u3mp1"]
+radius = 0.3
+height = 1.8
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j4l5y"]
+points = PackedVector3Array(-0.00019574165, 1, -0.00019574165, 0.19498825, -1, -0.9808144, -0.00019574165, -1, -1, -0.19518405, -1, -0.9808144, -0.382733, -1, -0.92404073, -0.5555991, -1, -0.83163667, -0.7071261, -1, -0.7071261, -0.83163667, -1, -0.5555991, -0.92404073, -1, -0.382733, -0.9808144, -1, -0.19518405, -1, -1, -0.00019574165, -0.9808144, -1, 0.19498825, -0.92404073, -1, 0.38253725, -0.83163667, -1, 0.55540323, -0.7071261, -1, 0.7069303, -0.5555991, -1, 0.8314409, -0.382733, -1, 0.92384493, -0.19518405, -1, 0.9806186, -0.00019574165, -1, 1, 0.19498825, -1, 0.9806186, 0.38253725, -1, 0.92384493, 0.55540323, -1, 0.8314409, 0.7069303, -1, 0.7069303, 0.8314409, -1, 0.55540323, 0.92384493, -1, 0.38253725, 0.9806186, -1, 0.19498825, 1, -1, -0.00019574165, 0.9806186, -1, -0.19518405, 0.92384493, -1, -0.382733, 0.8314409, -1, -0.5555991, 0.7069303, -1, -0.7071261, 0.55540323, -1, -0.83163667, 0.38253725, -1, -0.92404073)
+
+[node name="BasicEnemy" type="CharacterBody3D" unique_id=1449157707]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_y8o5l")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1294155852]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9019871, 0)
+mesh = SubResource("CapsuleMesh_p1k8i")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MeshInstance3D" unique_id=1859928981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5158423, 0.3642515)
+mesh = SubResource("SphereMesh_ucyoi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1195473395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9019871, 0)
+shape = SubResource("CapsuleShape3D_u3mp1")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=331819341]
+path_desired_distance = 0.5
+avoidance_enabled = true
+
+[node name="HealthComponent" type="Node" parent="." unique_id=169305339]
+script = ExtResource("2_nsbuq")
+metadata/_custom_type_script = "uid://cuyt4ec4kv21e"
+
+[node name="StateChart" type="Node" parent="." unique_id=310691941]
+script = ExtResource("3_hrp8q")
+metadata/_custom_type_script = "uid://couw105c3bde4"
+
+[node name="Root" type="Node" parent="StateChart" unique_id=857176674]
+script = ExtResource("4_4luvd")
+initial_state = NodePath("IdleState")
+
+[node name="IdleState" type="Node" parent="StateChart/Root" unique_id=1536232242]
+script = ExtResource("5_6ow0p")
+
+[node name="FollowState" type="Node" parent="StateChart/Root" unique_id=95722371]
+script = ExtResource("5_6ow0p")
+
+[node name="ToIdle" type="Node" parent="StateChart/Root" unique_id=270804735]
+script = ExtResource("6_i5w4v")
+to = NodePath("../IdleState")
+event = &"toIdle"
+delay_in_seconds = "0.0"
+
+[node name="ToFollow" type="Node" parent="StateChart/Root" unique_id=2092641893]
+script = ExtResource("6_i5w4v")
+to = NodePath("../FollowState")
+event = &"toFollow"
+delay_in_seconds = "0.0"
+
+[node name="DetectionArea" type="Area3D" parent="." unique_id=143393498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21838641, 0)
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="DetectionArea" unique_id=1418203111]
+transform = Transform3D(-1.748455e-07, 1.7484554e-07, -4, 3.9999998, 0, -1.7484551e-07, 0, -3.9999998, -1.7484555e-07, -2.5822195e-07, 1.6406696, 4.2667594)
+shape = SubResource("ConvexPolygonShape3D_j4l5y")
+
+[node name="VisionTimer" type="Timer" parent="." unique_id=1037213860]
+wait_time = 0.25
+autostart = true
+
+[node name="VisionRaycast" type="RayCast3D" parent="." unique_id=552026616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4373087, 0)
+target_position = Vector3(0, 0, 100)
+collision_mask = 2
+debug_shape_custom_color = Color(0.712692, 2.9359758e-06, 5.7756904e-07, 1)
+debug_shape_thickness = 5
+
+[node name="DetectionTimer" type="Timer" parent="." unique_id=228563826]
+wait_time = 30.0
+
+[connection signal="state_entered" from="StateChart/Root/IdleState" to="." method="_on_idle_state_state_entered"]
+[connection signal="state_physics_processing" from="StateChart/Root/FollowState" to="." method="_on_follow_state_physics_processing"]
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="timeout" from="VisionTimer" to="." method="_on_vision_timer_timeout"]
+[connection signal="timeout" from="DetectionTimer" to="." method="_on_detection_timer_timeout"]
