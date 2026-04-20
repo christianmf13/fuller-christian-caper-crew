@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bce8qmhmokcos"]
+
+[ext_resource type="PackedScene" uid="uid://bjm1s0woqfydn" path="res://assets/imported/power_box_thing.glb" id="1_lysmd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kqefu"]
+size = Vector3(0.30488282, 0.50683594, 0.21083984)
+
+[node name="PowerBox" type="StaticBody3D" unique_id=1499926781]
+
+[node name="power_box_thing" parent="." unique_id=595820814 instance=ExtResource("1_lysmd")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1056053990]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7426757, 1.2119141, -0.7047364)
+shape = SubResource("BoxShape3D_kqefu")
