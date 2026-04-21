@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c3xtc0ufa2cew"]
+
+[ext_resource type="PackedScene" uid="uid://ce3hy4mwyhdry" path="res://scenes/level_01_no_player.tscn" id="1_ekxnf"]
+[ext_resource type="PackedScene" uid="uid://b0ursvny7ycs7" path="res://scenes/interactables/getaway_car.tscn" id="2_bqqt6"]
+
+[node name="MainMenu" type="Node3D" unique_id=1316205225]
+
+[node name="level01" parent="." unique_id=830540172 instance=ExtResource("1_ekxnf")]
+
+[node name="GetawayCar" parent="." unique_id=760797605 instance=ExtResource("2_bqqt6")]
+transform = Transform3D(-0.7666724, 0, 0.6420386, 0, 1, 0, -0.6420386, 0, -0.7666724, 14.1815, 0, -30.946844)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=351458523]
+transform = Transform3D(-0.9033802, 0.10672081, 0.41534916, -7.450581e-09, 0.9685397, -0.24885896, -0.42884064, -0.22481424, -0.87495965, 13.914249, 0.49188685, -33.876175)
+
+[node name="Label" type="Label" parent="Camera3D" unique_id=254743553]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -148.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0.10980392, 1)
+theme_override_colors/font_outline_color = Color(1, 0.79607844, 0.23921569, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 125
+text = "CAPER CREW"
+horizontal_alignment = 1

@@ -4,6 +4,7 @@ extends CharacterBody3D
 @onready var standing_collision_shape: CollisionShape3D = $StandingCollisionShape
 @onready var crouching_collision_shape: CollisionShape3D = $CrouchingCollisionShape
 @onready var uncrouch_detection: RayCast3D = $UncrouchDetection
+@onready var phone_ui: Node3D = $Head/Camera3D/PhoneUI
 
 var current_speed = base_speed
 var mouse_captured : bool = false
@@ -47,6 +48,7 @@ var slide_timer = 0.0
 var slide_timer_max = 1.0
 var slide_vector = Vector2.ZERO
 var direction = Vector3.ZERO
+
 
 #Mouse looking logic
 func _unhandled_input(event: InputEvent) -> void:

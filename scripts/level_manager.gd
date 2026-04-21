@@ -4,6 +4,8 @@ extends Node3D
 @onready var vault_key: Label = $VaultKey
 @onready var office_key: Label = $OfficeKey
 @onready var front_door_key: Label = $FrontDoorKey
+@onready var phone_ui: Node3D = $PhoneUI
+@onready var text_notification: Label = $TextNotification
 
 @export var value_amount: int
 @export var value_goal: int
@@ -19,15 +21,48 @@ signal power_off
 var value_reached: bool = false
 signal done_looting
 signal power_restored
+var phone_out: bool 
+var text_noti: bool
+signal first_text
+signal second_text
+
+func _ready() -> void:
+	phone_ui.visible = false
+	text_noti = false
+	level_start()
 
 func _physics_process(delta: float) -> void:
 	value_tracker.text = "Value: $" + str(value_amount) + "/$" + str(value_goal)
 	
+	if !text_noti:
+		text_notification.visible = false
+	if text_noti == true:
+		text_notification.visible = true
+	phone()
+	
 	end_level_start()
 
-
+func level_start():
+	await get_tree().create_timer(5.0).timeout
+	text_noti = true
 	
-		
+	if !text_noti:
+		pass
+	else:
+		first_text.emit()
+#phone UI logic
+func phone():
+	if Input.is_action_just_pressed("phone") and !phone_out:
+		#print("phone input worked")
+		phone_ui.visible = true
+		phone_out = true
+		text_noti = false
+	elif Input.is_action_just_pressed("phone"):
+		#print("yipee")
+		phone_ui.visible = false
+		phone_out = false
+
+#how to trigger the end level sequence
 func end_level_start():
 	if value_amount >= value_goal:
 		value_reached = true
@@ -179,14 +214,17 @@ func _on_office_key_office_key_obtained() -> void:
 	has_office_key = true
 	has_office_keys.emit()
 	office_key.text = "1x Office Key"
-
-
+#front door key logic
 func _on_door_key_door_key_obtained() -> void:
 	has_front_door_key = true
 	has_door_key.emit()
 	front_door_key.text = "1x Front Door Key"
-
+#power logic
 func _on_power_box_power_off() -> void:
 	power_on = false
 	power_off.emit()
-	print("power is now off")
+
+func _on_entered_building_trigger_body_entered(body: Node3D) -> void:
+	text_noti = true
+	second_text.emit()
+	print("second text trigger works")

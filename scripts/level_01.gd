@@ -6,7 +6,6 @@ var current_nodes = get_child_count()
 var starting_nodes : int
 var enemy_spawned: bool = false
 
-
 func _on_level_manager_done_looting() -> void:
 	var new_enemy = enemy.instantiate()
 	if !enemy_spawned:

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://c2c5gk4wokcqo"]
+
+[ext_resource type="Script" uid="uid://qgta7j37gn17" path="res://scripts/level_manager.gd" id="1_06fa7"]
+
+[node name="LevelManager" type="Node3D" unique_id=1261027617]
+script = ExtResource("1_06fa7")
+
+[node name="ValueTracker" type="Label" parent="." unique_id=2036437518]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 28
+
+[node name="VaultKey" type="Label" parent="." unique_id=441564100]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -166.0
+offset_bottom = 39.0
+grow_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 28
+
+[node name="OfficeKey" type="Label" parent="." unique_id=991813218]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -175.0
+offset_top = 32.0
+offset_bottom = 75.0
+grow_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 28
+
+[node name="FrontDoorKey" type="Label" parent="." unique_id=86593694]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -242.0
+offset_top = 62.0
+offset_bottom = 105.0
+grow_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 28
+
+[node name="TextNotification" type="Label" parent="." unique_id=812201952]
+offset_left = 15.0
+offset_top = 82.0
+offset_right = 151.0
+offset_bottom = 131.0
+text = "!!!!!
+Press TAB to view"
+horizontal_alignment = 1

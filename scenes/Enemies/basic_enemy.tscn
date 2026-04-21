@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3ktc2sti5m1v"]
 
-[ext_resource type="Script" uid="uid://dcs1yqoc5skt6" path="res://scenes/Enemies/basic_enemy.gd" id="1_kqsun"]
+[ext_resource type="Script" uid="uid://dcs1yqoc5skt6" path="res://scripts/enemies/basic_enemy.gd" id="1_kqsun"]
 [ext_resource type="Script" uid="uid://couw105c3bde4" path="res://addons/godot_state_charts/state_chart.gd" id="2_p1k8i"]
 [ext_resource type="Script" uid="uid://cuyt4ec4kv21e" path="res://scripts/components/health_component.gd" id="2_ucyoi"]
 [ext_resource type="Script" uid="uid://jk2jm1g6q853" path="res://addons/godot_state_charts/compound_state.gd" id="3_ucyoi"]

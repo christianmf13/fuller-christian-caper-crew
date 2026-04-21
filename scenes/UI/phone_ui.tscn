@@ -1,0 +1,179 @@
+[gd_scene format=3 uid="uid://bkt20genopmjl"]
+
+[ext_resource type="Script" uid="uid://d3063cokldkhu" path="res://scripts/UI/phone_ui.gd" id="1_87bsw"]
+[ext_resource type="PackedScene" uid="uid://bll5864tvrw82" path="res://assets/imported/scene.gltf" id="1_puknd"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_puknd"]
+viewport_path = NodePath("FirstTextBubble/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_87bsw"]
+viewport_path = NodePath("SecondTextBubble/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_5qldu"]
+viewport_path = NodePath("FourthTextBubble/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_1ugfb"]
+viewport_path = NodePath("FifthTextBubble/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_sqh71"]
+viewport_path = NodePath("SixthTextBubble/SubViewport")
+
+[node name="PhoneUI" type="Node3D" unique_id=1334913143]
+script = ExtResource("1_87bsw")
+
+[node name="phone" parent="." unique_id=692796854 instance=ExtResource("1_puknd")]
+transform = Transform3D(0.21571042, 0.000994995, 0.12636468, 0.048781946, 0.22995886, -0.08508383, -0.116573274, 0.09807108, 0.19822387, 0, 0, 0)
+
+[node name="FirstMessage" type="Label3D" parent="phone" unique_id=1971261718]
+transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, 0.06790449, 0.42008126, 0.032972742)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Alright, so you want to 
+be a part of our crew? 
+You're going to have 
+to prove yourself."
+font_size = 14
+outline_size = 8
+
+[node name="SecondMessage" type="Label3D" parent="phone" unique_id=2036714447]
+transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, -0.06815999, -0.2191001, 0.25704992)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Find a way inside the  
+bank without setting 
+off the alarm. I paid
+off the guard to take
+a \"break\" so, prove
+yourself on an easy
+job and you can run
+with us."
+font_size = 14
+outline_size = 8
+
+[node name="ThirdMessage" type="Label3D" parent="phone" unique_id=556153141]
+transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, 0.07451663, 0.45114273, 0.022083536)
+text = "Alright so you got
+inside. I'm not 
+impressed yet."
+font_size = 14
+outline_size = 8
+
+[node name="FourthMessage" type="Label3D" parent="phone" unique_id=490581444]
+transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, -0.07224539, -0.23829183, 0.26377794)
+text = "Search the building for 
+the keys to the vault.
+You don't have much
+time before the 
+guard comes back."
+font_size = 14
+outline_size = 8
+
+[node name="FifthMessage" type="Label3D" parent="phone" unique_id=769043692]
+transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, 0.03522218, 0.26655167, 0.08679544)
+text = "Did the lights just turn
+back on? Yea, you might
+want to leave. The 
+guard is back. I wanted
+to actually test you.
+If you get out, I'll be 
+impressed and you 
+can join the crew."
+font_size = 14
+outline_size = 8
+
+[node name="SixthMessage" type="Label3D" parent="phone" unique_id=1028676380]
+transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, -0.10821915, -0.40728337, 0.32302114)
+text = "Oh, and don't set off
+the alarm. You won't
+enjoy what happens
+if you do. If you get
+caught, forget you 
+ever met me."
+font_size = 14
+outline_size = 8
+
+[node name="FirstTextBubble" type="Node3D" parent="." unique_id=361144624]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.313771, -5.232664, 0.03639587)
+
+[node name="SubViewport" type="SubViewport" parent="FirstTextBubble" unique_id=1554487450]
+transparent_bg = true
+size = Vector2i(1080, 1080)
+
+[node name="ProgressBar" type="ProgressBar" parent="FirstTextBubble/SubViewport" unique_id=914568773]
+offset_right = 20.5
+offset_bottom = 13.0
+show_percentage = false
+
+[node name="Sprite3D" type="Sprite3D" parent="FirstTextBubble" unique_id=1758683227]
+texture = SubResource("ViewportTexture_puknd")
+
+[node name="SecondTextBubble" type="Node3D" parent="." unique_id=1247157444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.301668, -5.3500366, 0.01752019)
+
+[node name="SubViewport" type="SubViewport" parent="SecondTextBubble" unique_id=845340967]
+transparent_bg = true
+size = Vector2i(1080, 1080)
+
+[node name="ProgressBar" type="ProgressBar" parent="SecondTextBubble/SubViewport" unique_id=605720812]
+offset_right = 21.0
+offset_bottom = 25.0
+show_percentage = false
+
+[node name="Sprite3D" type="Sprite3D" parent="SecondTextBubble" unique_id=1510586152]
+texture = SubResource("ViewportTexture_87bsw")
+
+[node name="ThirdTextBubble" type="Node3D" parent="." unique_id=443333944]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.313771, -5.232664, 0.03639587)
+
+[node name="SubViewport" type="SubViewport" parent="ThirdTextBubble" unique_id=1827463254]
+transparent_bg = true
+size = Vector2i(1080, 1080)
+
+[node name="ProgressBar" type="ProgressBar" parent="ThirdTextBubble/SubViewport" unique_id=1081747339]
+offset_right = 20.5
+offset_bottom = 13.0
+show_percentage = false
+
+[node name="Sprite3D" type="Sprite3D" parent="ThirdTextBubble" unique_id=812462607]
+texture = SubResource("ViewportTexture_puknd")
+
+[node name="FourthTextBubble" type="Node3D" parent="." unique_id=1843394831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.301668, -5.3847184, 0.01752019)
+
+[node name="SubViewport" type="SubViewport" parent="FourthTextBubble" unique_id=1070591621]
+transparent_bg = true
+size = Vector2i(1080, 1080)
+
+[node name="ProgressBar" type="ProgressBar" parent="FourthTextBubble/SubViewport" unique_id=913329602]
+offset_right = 21.0
+offset_bottom = 20.0
+show_percentage = false
+
+[node name="Sprite3D" type="Sprite3D" parent="FourthTextBubble" unique_id=47135402]
+texture = SubResource("ViewportTexture_5qldu")
+
+[node name="FifthTextBubble" type="Node3D" parent="." unique_id=587530201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4763825, -2.3843768, 0.03418255)
+
+[node name="SubViewport" type="SubViewport" parent="FifthTextBubble" unique_id=862873358]
+transparent_bg = true
+
+[node name="ProgressBar" type="ProgressBar" parent="FifthTextBubble/SubViewport" unique_id=1821633759]
+offset_right = 20.5
+offset_bottom = 24.0
+show_percentage = false
+
+[node name="Sprite3D" type="Sprite3D" parent="FifthTextBubble" unique_id=1970240502]
+texture = SubResource("ViewportTexture_1ugfb")
+
+[node name="SixthTextBubble" type="Node3D" parent="." unique_id=1091108936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4752638, -2.580298, 0.030623913)
+
+[node name="SubViewport" type="SubViewport" parent="SixthTextBubble" unique_id=947018944]
+transparent_bg = true
+
+[node name="ProgressBar" type="ProgressBar" parent="SixthTextBubble/SubViewport" unique_id=2114164018]
+offset_right = 20.5
+offset_bottom = 20.0
+show_percentage = false
+
+[node name="Sprite3D" type="Sprite3D" parent="SixthTextBubble" unique_id=2004658334]
+texture = SubResource("ViewportTexture_sqh71")
