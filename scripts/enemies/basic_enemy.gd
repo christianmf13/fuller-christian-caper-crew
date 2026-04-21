@@ -3,6 +3,7 @@ extends Enemy
 
 @export var follow_speed: float = 3.0
 
+@onready var collision_shape_3d: CollisionShape3D = $CollisionShape3D
 @onready var nav_agent: NavigationAgent3D = $NavigationAgent3D
 @onready var state_chart: StateChart = $StateChart
 @onready var health_component: HealthComponent = $HealthComponent
@@ -11,7 +12,7 @@ extends Enemy
 @onready var detection_timer: Timer = $DetectionTimer
 
 var target: Node3D
-
+signal player_captured
 
 #logic for enemy line of sight (not working currently)
 func _on_vision_timer_timeout() -> void:
@@ -107,3 +108,6 @@ func _on_detection_timer_timeout() -> void:
 func _on_idle_state_state_entered() -> void:
 	nav_agent.velocity = Vector3.ZERO
 	
+func _on_kill_box_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		player_captured.emit()

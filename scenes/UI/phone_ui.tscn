@@ -81,8 +81,8 @@ outline_size = 8
 
 [node name="SixthMessage" type="Label3D" parent="phone" unique_id=1028676380]
 transform = Transform3D(0.8553339, 0.19695161, -0.4791806, -0.00045573828, 0.92520696, 0.37946272, 0.5180771, -0.3243489, 0.7914505, -0.10821915, -0.40728337, 0.32302114)
-text = "Oh, and don't set off
-the alarm. You won't
+text = "Oh, and don't let him
+get close. You won't
 enjoy what happens
 if you do. If you get
 caught, forget you 

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c2c5gk4wokcqo"]
 
 [ext_resource type="Script" uid="uid://qgta7j37gn17" path="res://scripts/level_manager.gd" id="1_06fa7"]
+[ext_resource type="AudioStream" uid="uid://csdqtwoa713mr" path="res://assets/imported/SFX/phone_vibrate.wav" id="2_avku6"]
 
 [node name="LevelManager" type="Node3D" unique_id=1261027617]
 script = ExtResource("1_06fa7")
@@ -55,3 +56,6 @@ offset_bottom = 131.0
 text = "!!!!!
 Press TAB to view"
 horizontal_alignment = 1
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1063224061]
+stream = ExtResource("2_avku6")

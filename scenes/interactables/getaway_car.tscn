@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cwbxsn7bycpi" path="res://assets/imported/cars/Models/GLB format/delivery.glb" id="1_eacvo"]
 [ext_resource type="PackedScene" uid="uid://mkjt8auf8pq0" path="res://scenes/VFX/smoke_vfx.tscn" id="2_kdpci"]
+[ext_resource type="AudioStream" uid="uid://c7vtpih63h44e" path="res://assets/imported/SFX/truck_idle.ogg" id="3_x48kn"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kdpci"]
 size = Vector3(1.4, 1.6, 3.230371)
@@ -19,3 +20,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.38426352, 0.2, -1.6913679)
 
 [node name="SmokeVFX3" parent="." unique_id=645655359 instance=ExtResource("2_kdpci")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4747905, 0.2, -1.6913679)
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1651060431]
+stream = ExtResource("3_x48kn")
+volume_db = -14.0
+autoplay = true

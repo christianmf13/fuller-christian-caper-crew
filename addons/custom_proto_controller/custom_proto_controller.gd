@@ -142,3 +142,7 @@ func capture_mouse():
 func release_mouse():
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	mouse_captured = false
+
+
+func _on_guard_player_captured() -> void:
+	set_physics_process(false)

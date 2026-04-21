@@ -6,6 +6,9 @@ extends Node3D
 @onready var front_door_key: Label = $FrontDoorKey
 @onready var phone_ui: Node3D = $PhoneUI
 @onready var text_notification: Label = $TextNotification
+@onready var audio_stream_player_3d: AudioStreamPlayer3D = $AudioStreamPlayer3D
+@onready var you_died: Node3D = $YouDied
+
 
 @export var value_amount: int
 @export var value_goal: int
@@ -19,14 +22,18 @@ var has_front_door_key: bool = false
 var power_on: bool = true
 signal power_off
 var value_reached: bool = false
+var death_screen: bool
 signal done_looting
 signal power_restored
 var phone_out: bool 
 var text_noti: bool
 signal first_text
 signal second_text
+signal notification_sent
 
 func _ready() -> void:
+	death_screen = false
+	you_died.visible = false
 	phone_ui.visible = false
 	text_noti = false
 	level_start()
@@ -38,6 +45,13 @@ func _physics_process(delta: float) -> void:
 		text_notification.visible = false
 	if text_noti == true:
 		text_notification.visible = true
+		
+	if !death_screen:
+		you_died.visible = false
+		print("yippee")
+	if death_screen == true:
+		you_died.visible = true
+
 	phone()
 	
 	end_level_start()
@@ -49,6 +63,7 @@ func level_start():
 	if !text_noti:
 		pass
 	else:
+		audio_stream_player_3d.play()
 		first_text.emit()
 #phone UI logic
 func phone():
@@ -226,5 +241,11 @@ func _on_power_box_power_off() -> void:
 
 func _on_entered_building_trigger_body_entered(body: Node3D) -> void:
 	text_noti = true
+	audio_stream_player_3d.play()
 	second_text.emit()
-	print("second text trigger works")
+	notification_sent.emit()
+
+
+func _on_level_01_end_level() -> void:
+	audio_stream_player_3d.play()
+	text_noti = true

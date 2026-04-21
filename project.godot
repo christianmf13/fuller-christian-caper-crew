@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FullerChristian_Caper_Crew"
-run/main_scene="uid://dmdnn8l7avpnr"
+run/main_scene="uid://c3xtc0ufa2cew"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

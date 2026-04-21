@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://corxgqolmuqt6" path="res://scenes/buildings/wall_doorway_wide_square.tscn" id="4_t0ybu"]
 [ext_resource type="PackedScene" uid="uid://bkt20genopmjl" path="res://scenes/UI/phone_ui.tscn" id="4_tb7vs"]
 [ext_resource type="PackedScene" uid="uid://mf1drupjw8o3" path="res://scenes/buildings/wall.tscn" id="5_1b6n0"]
+[ext_resource type="PackedScene" uid="uid://c0hmft5m14wws" path="res://scenes/you_died.tscn" id="5_8jidg"]
+[ext_resource type="PackedScene" uid="uid://htj0fqgnj5j6" path="res://scenes/Enemies/guard.tscn" id="5_vsj3c"]
 [ext_resource type="PackedScene" uid="uid://da24cdwyejgq3" path="res://scenes/buildings/wall_half.tscn" id="6_llcge"]
 [ext_resource type="PackedScene" uid="uid://dl7iepkstxddx" path="res://scenes/buildings/wall_corner_column.tscn" id="7_px6rj"]
 [ext_resource type="PackedScene" uid="uid://8qhu0ujwfdtk" path="res://scenes/buildings/wall_doorway_square.tscn" id="8_2ucnx"]
@@ -94,6 +96,9 @@ transform = Transform3D(1, 0, 0, 0, 0.96657324, 0.25639057, 0, -0.25639057, 0.96
 value_goal = 500
 
 [node name="PhoneUI" parent="player/LevelManager" unique_id=1334913143 instance=ExtResource("4_tb7vs")]
+
+[node name="YouDied" parent="player/LevelManager" unique_id=78297653 instance=ExtResource("5_8jidg")]
+visible = false
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=1515258984]
 visible = false
@@ -7225,6 +7230,10 @@ shape = SubResource("BoxShape3D_tb7vs")
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=109546084]
 light_data = ExtResource("50_rte46")
 
+[node name="guard" parent="." unique_id=1449157707 instance=ExtResource("5_vsj3c")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.4, -4.3, 7.4)
+
+[connection signal="end_level" from="." to="player/LevelManager" method="_on_level_01_end_level"]
 [connection signal="done_looting" from="player/LevelManager" to="." method="_on_level_manager_done_looting"]
 [connection signal="first_text" from="player/LevelManager" to="player/LevelManager/PhoneUI" method="_on_level_manager_first_text"]
 [connection signal="has_door_key" from="player/LevelManager" to="SetDressingBuilding/FrontDoor1" method="_on_level_manager_has_door_key"]
@@ -7241,6 +7250,7 @@ light_data = ExtResource("50_rte46")
 [connection signal="has_office_keys" from="player/LevelManager" to="SetDressingBuilding/Door8" method="_on_level_manager_has_office_keys"]
 [connection signal="has_office_keys" from="player/LevelManager" to="SetDressingBuilding/Door9" method="_on_level_manager_has_office_keys"]
 [connection signal="has_vault_keys" from="player/LevelManager" to="SetDressingBuilding/DoorVault" method="_on_level_manager_has_vault_keys"]
+[connection signal="notification_sent" from="player/LevelManager" to="." method="_on_level_manager_notification_sent"]
 [connection signal="power_off" from="player/LevelManager" to="SetDressingBuilding/Door2Small" method="_on_level_manager_power_off"]
 [connection signal="power_off" from="player/LevelManager" to="SetDressingBuilding/Door2Small2" method="_on_level_manager_power_off"]
 [connection signal="power_off" from="player/LevelManager" to="SetDressingBuilding/Door2Small3" method="_on_level_manager_power_off"]
@@ -7317,3 +7327,4 @@ light_data = ExtResource("50_rte46")
 [connection signal="door_key_obtained" from="Interactables/DoorKey" to="player/LevelManager" method="_on_door_key_door_key_obtained"]
 [connection signal="power_off" from="Interactables/PowerBox" to="player/LevelManager" method="_on_power_box_power_off"]
 [connection signal="body_entered" from="EnteredBuildingTrigger" to="player/LevelManager" method="_on_entered_building_trigger_body_entered"]
+[connection signal="player_captured" from="guard" to="player" method="_on_guard_player_captured"]
