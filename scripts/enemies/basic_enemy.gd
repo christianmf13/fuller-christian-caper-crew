@@ -33,9 +33,9 @@ func _on_vision_timer_timeout() -> void:
 					$VisionRaycast.debug_shape_custom_color = Color(174,0,0)
 					print("i see you")
 					#on_triggered()
-			else: 
-				$VisionRaycast.debug_shape_custom_color = Color(0,255,0)
-				print("i don't see you")
+				else: 
+					$VisionRaycast.debug_shape_custom_color = Color(0,255,0)
+					#print("i don't see you")
 
 func _ready() -> void:
 	super._ready()
@@ -100,10 +100,8 @@ func _on_detection_area_body_entered(body: Node3D) -> void:
 		
 func _on_detection_area_body_exited(body: Node3D) -> void:
 	$DetectionTimer.start()
-	print("start timer")
 func _on_detection_timer_timeout() -> void:
 	state_chart.send_event("toIdle")
-	print("end timer")
 	
 func _on_idle_state_state_entered() -> void:
 	nav_agent.velocity = Vector3.ZERO
@@ -111,3 +109,4 @@ func _on_idle_state_state_entered() -> void:
 func _on_kill_box_body_entered(body: Node3D) -> void:
 	if body.is_in_group("player"):
 		player_captured.emit()
+		print("hitbox works")

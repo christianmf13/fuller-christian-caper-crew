@@ -88,7 +88,6 @@ script = ExtResource("1_hscr6")
 
 [node name="player" parent="." unique_id=1679509675 groups=["player"] instance=ExtResource("23_4rfup")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.7, 0.1, 13.9)
-collision_layer = 2
 collision_mask = 1
 
 [node name="LevelManager" parent="player" unique_id=1261027617 instance=ExtResource("43_glrgf")]
@@ -7231,7 +7230,14 @@ shape = SubResource("BoxShape3D_tb7vs")
 light_data = ExtResource("50_rte46")
 
 [node name="guard" parent="." unique_id=1449157707 instance=ExtResource("5_vsj3c")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.4, -4.3, 7.4)
+transform = Transform3D(-0.50000006, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, -0.50000006, -5.0999985, -4.2000012, 26.6)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2097545802]
+transform = Transform3D(-0.7071068, 0, -0.7071068, 0, 1, 0, 0.7071068, 0, -0.7071068, -6.700001, -3.4000006, 24.5)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(2, 2, 2)
 
 [connection signal="end_level" from="." to="player/LevelManager" method="_on_level_01_end_level"]
 [connection signal="done_looting" from="player/LevelManager" to="." method="_on_level_manager_done_looting"]
@@ -7260,6 +7266,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.4
 [connection signal="power_restored" from="player/LevelManager" to="SetDressingBuilding/Door2Small3" method="_on_level_manager_power_restored"]
 [connection signal="power_restored" from="player/LevelManager" to="Interactables/PowerBox" method="_on_level_manager_power_restored"]
 [connection signal="second_text" from="player/LevelManager" to="player/LevelManager/PhoneUI" method="_on_level_manager_second_text"]
+[connection signal="success" from="SetDressingBuilding/GetawayCar" to="player/LevelManager" method="_on_getaway_car_success"]
 [connection signal="diamond_collected" from="Interactables/Diamond2" to="player/LevelManager" method="_on_diamond_2_diamond_collected"]
 [connection signal="diamond_collected" from="Interactables/Diamond3" to="player/LevelManager" method="_on_diamond_3_diamond_collected"]
 [connection signal="gold_collected" from="Interactables/GoldBar" to="player/LevelManager" method="_on_gold_bar_gold_collected"]
@@ -7328,3 +7335,4 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.4
 [connection signal="power_off" from="Interactables/PowerBox" to="player/LevelManager" method="_on_power_box_power_off"]
 [connection signal="body_entered" from="EnteredBuildingTrigger" to="player/LevelManager" method="_on_entered_building_trigger_body_entered"]
 [connection signal="player_captured" from="guard" to="player" method="_on_guard_player_captured"]
+[connection signal="player_captured" from="guard" to="player/LevelManager" method="_on_guard_player_captured"]

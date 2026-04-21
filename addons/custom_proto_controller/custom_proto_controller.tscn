@@ -19,7 +19,7 @@ radius = 0.4
 height = 1.0
 
 [node name="player" type="CharacterBody3D" unique_id=1679509675]
-collision_layer = 3
+collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_qhypi")
 mouse_sens = 0.1

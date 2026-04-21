@@ -1,15 +1,14 @@
 [gd_scene format=3 uid="uid://cerxwwb27dir1"]
 
-[ext_resource type="ArrayMesh" uid="uid://d2uun6iii321m" path="res://assets/imported/roads/Models/roadTile_055.obj" id="1_k22e7"]
+[ext_resource type="PackedScene" uid="uid://ux8g6lrfhex4" path="res://assets/imported/roads/Models/gLTF/roadTile_055.gltf" id="1_k22e7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_11isf"]
 size = Vector3(3, 0.6305664, 3)
 
 [node name="ParkingLotTreeCap" type="StaticBody3D" unique_id=1423558320]
 
-[node name="RoadTile055" type="MeshInstance3D" parent="." unique_id=586660434]
-mesh = ExtResource("1_k22e7")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1025217884]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.3152832, -1.5)
 shape = SubResource("BoxShape3D_11isf")
+
+[node name="roadTile_055" parent="." unique_id=647234809 instance=ExtResource("1_k22e7")]

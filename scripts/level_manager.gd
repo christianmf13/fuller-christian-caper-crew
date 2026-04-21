@@ -7,7 +7,7 @@ extends Node3D
 @onready var phone_ui: Node3D = $PhoneUI
 @onready var text_notification: Label = $TextNotification
 @onready var audio_stream_player_3d: AudioStreamPlayer3D = $AudioStreamPlayer3D
-@onready var you_died: Node3D = $YouDied
+@onready var you_died: Control = $YouDied
 
 
 @export var value_amount: int
@@ -48,9 +48,10 @@ func _physics_process(delta: float) -> void:
 		
 	if !death_screen:
 		you_died.visible = false
-		print("yippee")
+		
 	if death_screen == true:
 		you_died.visible = true
+		print("yipee")
 
 	phone()
 	
@@ -87,6 +88,8 @@ func end_level_start():
 		power_restored.emit()
 	else:
 		pass
+
+
 
 #gold collection amounts (find a more efficient way)
 func _on_gold_bar_gold_collected() -> void:
@@ -249,3 +252,12 @@ func _on_entered_building_trigger_body_entered(body: Node3D) -> void:
 func _on_level_01_end_level() -> void:
 	audio_stream_player_3d.play()
 	text_noti = true
+
+
+func _on_guard_player_captured() -> void:
+	death_screen = true
+	print("signal works")
+
+
+func _on_getaway_car_success() -> void:
+	print("you won")

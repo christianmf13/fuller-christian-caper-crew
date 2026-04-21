@@ -2,16 +2,21 @@
 
 [ext_resource type="Script" uid="uid://d2qhlj4nfjxb2" path="res://scripts/you_died.gd" id="1_0hmh4"]
 
-[node name="YouDied" type="Node3D" unique_id=78297653]
+[node name="YouDied" type="Control" unique_id=890318232]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_0hmh4")
 
 [node name="Label" type="Label" parent="." unique_id=1536961326]
+layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_top = -11.5
-offset_bottom = 11.5
+offset_left = 196.0
+offset_top = 192.0
+offset_right = 958.0
+offset_bottom = 465.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.47058824, 0, 0, 1)
@@ -22,6 +27,7 @@ text = "BUSTED"
 horizontal_alignment = 1
 
 [node name="Restart" type="Button" parent="." unique_id=908821191]
+layout_mode = 0
 offset_left = 224.0
 offset_top = 435.0
 offset_right = 483.0
@@ -31,6 +37,7 @@ theme_override_font_sizes/font_size = 60
 text = "RESTART"
 
 [node name="Quit" type="Button" parent="." unique_id=1304060607]
+layout_mode = 0
 offset_left = 772.0
 offset_top = 434.0
 offset_right = 924.0
