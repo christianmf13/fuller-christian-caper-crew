@@ -8,6 +8,7 @@ extends Node3D
 @onready var text_notification: Label = $TextNotification
 @onready var audio_stream_player_3d: AudioStreamPlayer3D = $AudioStreamPlayer3D
 @onready var you_died: Control = $YouDied
+@onready var victory: Control = $Victory
 
 
 @export var value_amount: int
@@ -27,15 +28,18 @@ signal done_looting
 signal power_restored
 var phone_out: bool 
 var text_noti: bool
+var victory_screen: bool
 signal first_text
 signal second_text
 signal notification_sent
 
 func _ready() -> void:
 	death_screen = false
+	victory_screen = false
 	you_died.visible = false
 	phone_ui.visible = false
 	text_noti = false
+	value_goal = 20000
 	level_start()
 
 func _physics_process(delta: float) -> void:
@@ -51,7 +55,11 @@ func _physics_process(delta: float) -> void:
 		
 	if death_screen == true:
 		you_died.visible = true
-		print("yipee")
+		
+	if !victory_screen:
+		victory.visible = false
+	if victory_screen == true:
+		victory.visible = true
 
 	phone()
 	
@@ -74,7 +82,6 @@ func phone():
 		phone_out = true
 		text_noti = false
 	elif Input.is_action_just_pressed("phone"):
-		#print("yipee")
 		phone_ui.visible = false
 		phone_out = false
 
@@ -254,10 +261,13 @@ func _on_level_01_end_level() -> void:
 	text_noti = true
 
 
-func _on_guard_player_captured() -> void:
-	death_screen = true
-	print("signal works")
+
 
 
 func _on_getaway_car_success() -> void:
-	print("you won")
+	victory_screen = true
+
+
+
+func _on_guard_player_captured() -> void:
+	death_screen = true

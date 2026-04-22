@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://drq1bvv3dc2xr"]
+
+[ext_resource type="Script" uid="uid://beg8gfraw8ehv" path="res://scripts/UI/victory.gd" id="1_ieymx"]
+
+[node name="Victory" type="Control" unique_id=713940552]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ieymx")
+
+[node name="Label" type="Label" parent="." unique_id=1506707156]
+layout_mode = 0
+offset_left = 172.0
+offset_top = 97.0
+offset_right = 1016.0
+offset_bottom = 370.0
+theme_override_colors/font_color = Color(7.099286e-07, 0.4001078, 4.813075e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 200
+text = "SUCCESS"
+
+[node name="MainMenu" type="Button" parent="." unique_id=1028999513]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 347.0
+offset_right = 580.0
+offset_bottom = 438.0
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 60
+text = "MAIN MENU"
+
+[node name="Quit" type="Button" parent="." unique_id=501857909]
+layout_mode = 0
+offset_left = 815.0
+offset_top = 344.0
+offset_right = 967.0
+offset_bottom = 435.0
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 60
+text = "QUIT"
+
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

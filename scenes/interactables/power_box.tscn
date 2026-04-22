@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cg76fps154e7g" path="res://scripts/interactable objects/power_box.gd" id="1_kqefu"]
 [ext_resource type="PackedScene" uid="uid://bjm1s0woqfydn" path="res://assets/imported/power_box_thing.glb" id="1_lysmd"]
+[ext_resource type="AudioStream" uid="uid://jkf0mrunfhop" path="res://assets/imported/SFX/power_switch.wav" id="3_mct02"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kqefu"]
 size = Vector3(0.30488282, 0.50683594, 0.21083984)
@@ -15,3 +16,6 @@ transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1056053990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7426757, 1.2119141, -0.7047364)
 shape = SubResource("BoxShape3D_kqefu")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=847681541]
+stream = ExtResource("3_mct02")

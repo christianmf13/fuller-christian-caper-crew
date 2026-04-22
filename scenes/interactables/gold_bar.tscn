@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dgkac45fk42ii"]
 
 [ext_resource type="Script" uid="uid://bwg5olcknbcs" path="res://scripts/interactable objects/gold_bar.gd" id="1_ttumj"]
-[ext_resource type="PackedScene" uid="uid://ci5yb4yt5cnlq" path="res://assets/imported/gold_bar.gltf" id="1_x7818"]
+[ext_resource type="PackedScene" uid="uid://cuaottcu5p1xw" path="res://assets/imported/money_stacks_set.glb" id="1_x7818"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ttumj"]
-size = Vector3(4.9, 0.84936523, 1.9553223)
+size = Vector3(1.8000001, 0.27490234, 0.9500977)
 
 [node name="GoldBar" type="StaticBody3D" unique_id=2086414206]
 script = ExtResource("1_ttumj")
@@ -12,8 +12,7 @@ prompt_message = "Steal"
 item_value = 500
 
 [node name="gold_bar" parent="." unique_id=1123998381 instance=ExtResource("1_x7818")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1144098269]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.00013184547, 0.00051269494, 0.0028564446)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.030131847, 0.023095706, -0.04768554)
 shape = SubResource("BoxShape3D_ttumj")

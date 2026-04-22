@@ -32,7 +32,6 @@ func _on_level_manager_first_text() -> void:
 	first_text_bubble.visible = true
 	first_message.visible = true
 	await get_tree().create_timer(5.0).timeout
-	print("yup")
 	second_text_bubble.visible = true
 	second_message.visible = true
 

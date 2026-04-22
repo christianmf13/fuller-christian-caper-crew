@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bqkb343t3s0i1" path="res://addons/custom_proto_controller/custom_proto_controller.gd" id="1_qhypi"]
 [ext_resource type="PackedScene" uid="uid://b7nrvknhibhl" path="res://scenes/interact system/interact_ray.tscn" id="2_b3jnx"]
+[ext_resource type="Texture2D" uid="uid://di00bhpjgi8u5" path="res://assets/plain-circle.png" id="3_43d6f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhypi"]
 albedo_color = Color(0.101960786, 1, 0.35686275, 1)
@@ -48,3 +49,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 
 [node name="UncrouchDetection" type="RayCast3D" parent="." unique_id=797023821]
 target_position = Vector3(0, 1.8, 0)
+
+[node name="Control" type="Control" parent="." unique_id=1407106404]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Crosshair" type="TextureRect" parent="Control" unique_id=772702306]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 17.0
+offset_right = 525.0
+offset_bottom = 529.0
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("3_43d6f")

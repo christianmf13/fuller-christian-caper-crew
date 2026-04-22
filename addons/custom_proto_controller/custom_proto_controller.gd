@@ -146,5 +146,8 @@ func release_mouse():
 
 func _on_guard_player_captured() -> void:
 	set_physics_process(false)
-	mouse_captured = false
-	print("captured")
+
+
+
+func _on_getaway_car_success() -> void:
+	set_physics_process(false)

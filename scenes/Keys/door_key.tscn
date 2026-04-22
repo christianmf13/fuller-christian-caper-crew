@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bmf40vdhsrssq"]
 
-[ext_resource type="PackedScene" uid="uid://bfibjdgt2qdm4" path="res://assets/imported/door_key.gltf" id="1_st7ue"]
+[ext_resource type="PackedScene" uid="uid://csiqf8ho1tdqa" path="res://assets/imported/keyring.glb" id="1_st7ue"]
 [ext_resource type="Script" uid="uid://dfqeaxekdnbpo" path="res://scripts/interactable objects/door_key.gd" id="1_w6xoi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_w6xoi"]
-size = Vector3(1, 0.42980957, 2.2359376)
+size = Vector3(0.5164795, 0.15457153, 0.6)
 
 [node name="DoorKey" type="StaticBody3D" unique_id=624748361]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
@@ -14,5 +14,5 @@ script = ExtResource("1_w6xoi")
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=643078657]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19537354, -0.017968744)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03480222, 0.070999146, -0.035937577)
 shape = SubResource("BoxShape3D_w6xoi")
